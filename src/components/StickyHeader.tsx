@@ -1,5 +1,8 @@
 import { ReactNode } from "react";
 
+/**
+ * Sample text here
+ */
 export default function StickyHeader({ title, icon }: { title: string; icon?: ReactNode }) {
     return (
         <div className="heading-sticky">
