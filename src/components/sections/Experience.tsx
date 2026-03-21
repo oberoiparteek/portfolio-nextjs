@@ -243,7 +243,7 @@ export default function Experience() {
                 <div className="text-center">
                     <a
                         className="my-1 underline-link link-svg"
-                        href="https://drive.google.com/file/d/1q3_JnY4aZkErOjITSaG2SyIlLpJ1QfDu/view?usp=sharing"
+                        href="/r"
                         rel="noopener noreferrer"
                         target="_blank"
                     >

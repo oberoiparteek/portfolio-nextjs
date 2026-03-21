@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function FabDownload() {
     return (
         <motion.a
-            href="https://drive.google.com/uc?id=1q3_JnY4aZkErOjITSaG2SyIlLpJ1QfDu&export=download"
+            href="/resume"
             target="_blank"
             rel="noopener noreferrer"
             className="fab-download"

@@ -91,7 +91,7 @@ export default function MobileMenu() {
                             {/* Added Resume Download Link here since we removed FAB */}
                             <li style={{ marginTop: '12px', borderTop: '1px solid rgba(92, 229, 213, 0.2)', paddingTop: '12px' }}>
                                 <a
-                                    href="https://drive.google.com/uc?id=1q3_JnY4aZkErOjITSaG2SyIlLpJ1QfDu&export=download"
+                                    href="/resume"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="mobile-nav-link"
