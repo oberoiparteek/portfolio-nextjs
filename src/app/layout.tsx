@@ -43,11 +43,16 @@ export const metadata: Metadata = {
 import Cursor from "@/components/Cursor";
 import KonamiCode from "@/components/KonamiCode";
 import { ThemeProvider } from "./providers";
-import { Bricolage_Grotesque } from 'next/font/google';
+import { Bricolage_Grotesque, Martian_Mono } from 'next/font/google';
 
 const bricolage = Bricolage_Grotesque({
   subsets: ['latin'],
   variable: '--font-bricolage',
+});
+
+const martianMono = Martian_Mono({
+  subsets: ['latin'],
+  variable: '--font-martian',
 });
 
 export default function RootLayout({
@@ -57,7 +62,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
-      <body className={`font-sans ${bricolage.variable}`}>
+      <body className={`font-sans ${bricolage.variable} ${martianMono.variable}`}>
         <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem>
           <Cursor />
           <KonamiCode />

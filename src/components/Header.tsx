@@ -3,6 +3,7 @@
 
 import { useActiveSection } from "@/hooks/useActiveSection";
 import ThemeToggle from "./ThemeToggle";
+import Image from "next/image";
 
 export default function Header() {
     const activeSection = useActiveSection();
@@ -18,7 +19,6 @@ export default function Header() {
     return (
         <header>
             <div>
-
                 <ul className="nav">
                     <li className={`about - nav ${ activeSection === "about" ? "active" : "" } `}>
                         <a href="#about" onClick={(e) => handleNavClick(e, "about")}>

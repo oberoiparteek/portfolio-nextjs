@@ -17,10 +17,12 @@ export default function Experience() {
             <div className="experiences">
                 <TiltCard>
                 <a href="https://www.cvent.com/" target="_blank" className="exp">
-                    <span className="title link-svg" title="Job title">
-                        Senior Frontend Engineer ・ Cvent
-                        <svg
-                            role="presentation"
+                    <div className="flex items-start gap-4 mb-2">
+                        <img src="/images/cvent.svg" alt="Cvent Logo" className="w-12 h-12 rounded-lg shadow-sm bg-white p-1 object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                        <div>
+                            <span className="title link-svg text-lg" title="Job title" style={{ display: 'flex', alignItems: 'center' }}>
+                                Senior Frontend Engineer
+                                <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 20 20"
                             fill="currentColor"
@@ -33,7 +35,10 @@ export default function Experience() {
                                 clipRule="evenodd"
                             />
                         </svg>
-                    </span>
+                            </span>
+                            <span className="text-sm font-medium mt-1 inline-block" style={{ color: 'var(--color-marine)' }}>Cvent</span>
+                        </div>
+                    </div>
                     <p>
                         <small title="Duration">MAY 2025 - PRESENT</small>
                     </p>
@@ -58,9 +63,12 @@ export default function Experience() {
                 </TiltCard>
                 <TiltCard>
                 <a href="https://www.ciena.com/products/manage-control-plan" target="_blank" className="exp">
-                    <span className="title link-svg" title="Job title">
-                        Software Development Engineer 2A ・ Ciena
-                        <svg
+                    <div className="flex items-start gap-4 mb-2">
+                        <img src="/images/ciena.svg" alt="Ciena Logo" className="w-12 h-12 rounded-lg shadow-sm bg-white p-1 object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                        <div>
+                            <span className="title link-svg text-lg" title="Job title" style={{ display: 'flex', alignItems: 'center' }}>
+                                Software Development Engineer 2A
+                                <svg
                             role="presentation"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 20 20"
@@ -74,7 +82,10 @@ export default function Experience() {
                                 clipRule="evenodd"
                             />
                         </svg>
-                    </span>
+                            </span>
+                            <span className="text-sm font-medium mt-1 inline-block" style={{ color: 'var(--color-marine)' }}>Ciena</span>
+                        </div>
+                    </div>
                     <p>
                         <small title="Duration">OCT 2022 - MAY 2025</small>
                     </p>
@@ -99,9 +110,12 @@ export default function Experience() {
                 </TiltCard>
                 <TiltCard>
                 <a href="https://www.nagarro.com/en" target="_blank" className="exp">
-                    <span className="title link-svg" title="Job title">
-                        Senior Engineer, Technology ・ Nagarro
-                        <svg
+                    <div className="flex items-start gap-4 mb-2">
+                        <img src="/images/nagarro.svg" alt="Nagarro Logo" className="w-12 h-12 rounded-lg shadow-sm bg-white p-1 object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                        <div>
+                            <span className="title link-svg text-lg" title="Job title" style={{ display: 'flex', alignItems: 'center' }}>
+                                Senior Engineer, Technology
+                                <svg
                             role="presentation"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 20 20"
@@ -115,14 +129,16 @@ export default function Experience() {
                                 clipRule="evenodd"
                             />
                         </svg>
-                    </span>
-                    <div
-                        className="link-svg"
-                        style={{ paddingTop: 10, fontSize: 13 }}
-                        title="Job title"
-                    >
-                        Also,
-                        <b>Engineer</b> and <b>Junior Engineer</b>
+                            </span>
+                            <span className="text-sm font-medium mt-1 inline-block" style={{ color: 'var(--color-marine)' }}>Nagarro</span>
+                            <div
+                                className="link-svg"
+                                style={{ paddingTop: 4, fontSize: 13, opacity: 0.8 }}
+                                title="Job title"
+                            >
+                                Also, <b>Engineer</b> and <b>Junior Engineer</b>
+                            </div>
+                        </div>
                     </div>
                     <p>
                         <small title="Duration">DEC 2018 - OCT 2022</small>
