@@ -48,7 +48,7 @@
     --grid-color: rgba(255, 255, 255, 0.03);
     --glass-bg-start: rgba(255, 255, 255, 0.05);
     --glass-bg-end: rgba(255, 255, 255, 0.01);
-    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.12);
     --cursor-bg-center: rgb(16, 29, 64);
     --cursor-bg-edge: rgb(15, 23, 42);
 }
@@ -63,7 +63,7 @@
     --grid-color: rgba(0, 0, 0, 0.04);
     --glass-bg-start: rgba(0, 0, 0, 0.03);
     --glass-bg-end: rgba(0, 0, 0, 0.01);
-    --glass-border: rgba(0, 0, 0, 0.08);
+    --glass-border: rgba(15, 23, 42, 0.18);
     --cursor-bg-center: rgba(13, 148, 136, 0.08);
     --cursor-bg-edge: rgb(248, 250, 252);
 }
@@ -536,6 +536,19 @@ body {
             margin-top: 2em;
 
             .exp {
+                display: block;
+                margin: 20px 0;
+                padding: 32px;
+                
+                /* Always have border and background, fixes light mode visibility */
+                background: linear-gradient(135deg, var(--glass-bg-start) 0%, var(--glass-bg-end) 100%);
+                border: 1px solid var(--glass-border);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+
                 .title {
                     font-weight: 500;
                     color: var(--color-marine); /* Bright teal by default */
@@ -560,11 +573,7 @@ body {
                     height: 14px;
                     transition: transform 0.3s ease;
                 }
-                display: block;
-                margin: 20px 0;
-                padding: 32px;
-                border: 1px solid transparent;
-                transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+                
 
 
 
@@ -580,7 +589,9 @@ body {
 
 
                 &:hover {
-                    background: rgba(92, 229, 213, 0.05);
+                    border: 1px solid var(--color-marine);
+                    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+                    transform: translateY(-4px);
                     .title {
                         color: var(--color-marine);
                         text-decoration: underline;
@@ -597,7 +608,7 @@ body {
             }
             .tilt-wrapper .exp:hover {
                     background: linear-gradient(135deg, var(--glass-bg-start) 0%, var(--glass-bg-end) 100%);
-                    border: 1px solid var(--glass-border);
+                    border: 1px solid var(--color-marine);
                     border-radius: 12px;
                     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
                     transform: translateY(-4px);
@@ -954,18 +965,11 @@ body {
                 margin: 20px 0;
                 padding: 20px;
                 user-select: text;
-                cursor: text;
-                pointer-events: none;
-
-
-                /* From https://css.glass */
-                background: rgba(239, 239, 239, 0.064);
+                cursor: pointer;
+                /* pointer-events: none; REMOVED so cards are clickable */
+                background: linear-gradient(135deg, var(--glass-bg-start) 0%, var(--glass-bg-end) 100%);
+                border: 1px solid var(--glass-border);
                 border-radius: 16px;
-                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                backdrop-filter: blur(5px);
-                -webkit-backdrop-filter: blur(5px);
-
-                /* From https://css.glass */
 
 
                 small {
