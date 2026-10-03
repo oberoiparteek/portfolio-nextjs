@@ -52,6 +52,14 @@ export default function Header() {
                             </small>
                         </a>
                     </li>
+                    <li className={`education - nav ${ activeSection === "education" ? "active" : "" } `}>
+                        <a href="#education" onClick={(e) => handleNavClick(e, "education")}>
+                            <span />
+                            <small>
+                                <b> EDUCATION</b>
+                            </small>
+                        </a>
+                    </li>
                     <li className={`projects - nav ${ activeSection === "projects" ? "active" : "" } `}>
                         <a href="#projects" onClick={(e) => handleNavClick(e, "projects")}>
                             <span />

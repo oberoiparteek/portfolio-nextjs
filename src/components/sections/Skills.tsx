@@ -15,51 +15,40 @@ export default function Skills() {
             />
             <div className="skills">
                 <div className="frontend">
-                    <span>Front-end Technologies:</span>
+                    <span>Frontend Architecture:</span>
                     <ul className="badge-wrapper green">
-                        <li className="badge">React 18+</li>
-                        <li className="badge">Next.js</li>
+                        <li className="badge">React 19 & RSC</li>
+                        <li className="badge">Next.js (App Router, PPR)</li>
                         <li className="badge">TypeScript</li>
-                        <li className="badge">JavaScript</li>
-                        <li className="badge">GraphQL</li>
-                        <li className="badge">HTML5</li>
-                        <li className="badge">CSS3/SCSS</li>
-                        <li className="badge">Redux</li>
-                        <li className="badge">Webpack</li>
-                        <li className="badge">Babel</li>
-                        <li className="badge">Storybook</li>
-                        <li className="badge">Material UI</li>
-                        <li className="badge">Bootstrap</li>
-                        <li className="badge">WCAG 2.2 AA</li>
-                        <li className="badge">Jest</li>
-                        <li className="badge">Cypress</li>
-                        <li className="badge">Playwright</li>
+                        <li className="badge">Konva.js</li>
+                        <li className="badge">Micro-Frontends</li>
+                        <li className="badge">Design Systems</li>
+                        <li className="badge">Tailwind CSS</li>
+                        <li className="badge">WCAG Accessibility</li>
+                        <li className="badge">Web Vitals (INP, LCP)</li>
                     </ul>
                 </div>
                 <div className="sdetools">
-                    <span>Software Development Tools:</span>
+                    <span>Engineering Excellence:</span>
                     <ul className="badge-wrapper yellow">
-                        <li className="badge">Git</li>
-                        <li className="badge">Jira</li>
-                        <li className="badge">Confluence</li>
-                        <li className="badge">Docker</li>
-                        <li className="badge">Jenkins</li>
-                        <li className="badge">NPM</li>
-                        <li className="badge">IntelliJ</li>
-                        <li className="badge">Rest API</li>
-                        <li className="badge">LaunchDarkly</li>
-                        <li className="badge">Mixpanel</li>
-                        <li className="badge">Datadog</li>
-                        <li className="badge">Test automation</li>
+                        <li className="badge">LLM Agent Tooling</li>
+                        <li className="badge">Playwright</li>
+                        <li className="badge">Mocha</li>
+                        <li className="badge">Datadog Observability</li>
+                        <li className="badge">CI/CD Automation</li>
+                        <li className="badge">Distributed Systems</li>
                     </ul>
                 </div>
                 <div className="backend">
-                    <span>Backend and databases:</span>
+                    <span>Backend & Cloud:</span>
                     <ul className="badge-wrapper red">
                         <li className="badge">Node.js</li>
                         <li className="badge">Python</li>
-                        <li className="badge">MySQL</li>
-                        <li className="badge">SQL</li>
+                        <li className="badge">GraphQL (Apollo Federation)</li>
+                        <li className="badge">AWS (ECS Fargate)</li>
+                        <li className="badge">OpenSearch</li>
+                        <li className="badge">REST APIs</li>
+                        <li className="badge">Microservices</li>
                     </ul>
                 </div>
             </div>

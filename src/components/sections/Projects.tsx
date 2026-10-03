@@ -14,6 +14,42 @@ export default function Projects() {
             />
             <div className="experiences">
                 <a
+                    href="https://www.cvent.com/"
+                    target="_blank"
+                    className="exp"
+                >
+                    <span className="title link-svg" title="Project">
+                        Enterprise Event Management Platform ・ Cvent
+                        <svg
+                            role="presentation"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                            aria-hidden="true"
+                        >
+                            <path
+                                fillRule="evenodd"
+                                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                clipRule="evenodd"
+                            />
+                        </svg>
+                    </span>
+                    <p className="mt-2 text-sm leading-normal">
+                        Spearheaded the frontend architecture for multiple micro-frontend applications within a global enterprise event management platform. Engineered an advanced Konva.js integration for dynamic visual rendering, paired with scalable AWS Fargate services to handle high-throughput, automated artifact generation for attendee credentialing. Additionally, developed secure administrative portals for event organizers featuring complex role-based access control and collaboration workflows, seamlessly integrating these UIs with distributed backend services via GraphQL.
+                    </p>
+                    <ul className="badge-wrapper">
+                        <li className="badge">Micro-Frontends</li>
+                        <li className="badge">React 19</li>
+                        <li className="badge">Next.js</li>
+                        <li className="badge">Konva.js</li>
+                        <li className="badge">AWS Fargate</li>
+                        <li className="badge">GraphQL</li>
+                        <li className="badge">RBAC</li>
+                    </ul>
+                    <p />
+                </a>
+                <a
                     href="https://www.ciena.com/products/manage-control-plan"
                     target="_blank"
                     className="exp"

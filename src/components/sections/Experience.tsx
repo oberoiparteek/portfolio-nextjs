@@ -36,38 +36,25 @@ export default function Experience() {
                         <small title="Duration">MAY 2025 - PRESENT</small>
                     </p>
                     <p className="mt-2 text-sm leading-normal">
-                        Migrated core event attendees discovery pages to Next.js using the App
-                        Router and SSR, fixing SEO indexing issues for large-scale event
-                        catalogs and improving initial paint speed for mobile users.
+                        Served as the frontend owner for 4 production micro-frontends, directing architectural decisions, RFCs, code quality standards, and end-to-end production delivery.
                         <br />
-                        Contributed to core framework by adding the Smart Filter for Check-in
-                        question management across sessions (comboboxes, multi-select facets)
-                        for the UI library, utilizing virtualization supporting 10,000+ items.
+                        Architected a reusable React form platform with drag-and-drop configuration, dynamic validation, localization, and accessibility, adopted by 3 product squads across engagement workflows.
                         <br />
-                        Migrated old REST endpoints to a GraphQL aggregation layer, reducing
-                        data grid load-time by 25%.
+                        Partnered with backend engineers to scale an asynchronous PDF generation platform processing 1M+ cumulative artifacts via AWS ECS Fargate, and engineered a parallel browser-based rendering prototype using HTML-to-canvas, jsPDF, and ZIP packaging.
                         <br />
-                        Set up LaunchDarkly experiment tags to run A/B tests on new attendee
-                        search ranking logic per event.
+                        Decoupled configuration reads from a monolithic GraphQL architecture by integrating an OpenSearch-backed service via Server-to-Server (S2S) calls, offloading ~50% of the payload and substantially improving configuration load times in development.
                         <br />
-                        Integrated Mixpanel analytics to track search query fallouts and
-                        zero-result rates, providing data-driven insights to refine inventory
-                        presentation.
+                        Built a secure magic-link access flow, enabling users to retrieve generated certificates directly from email without requiring a full authenticated application session.
                         <br />
-                        Designed and delivered a React + TypeScript UI templates library
-                        enabling 40% faster feature rollout and enforcing cross-team design
-                        consistency for custom forms.
+                        Integrated LLM-driven tooling into internal developer workflows, introducing 3+ custom agent skills for automated test generation and delivering 3–5 minutes of self-reported time savings per use case.
                     </p>
                     <ul className="badge-wrapper">
-                        <li className="badge">React 18+</li>
-                        <li className="badge">Next.js</li>
-                        <li className="badge">TypeScript</li>
+                        <li className="badge">React 19</li>
+                        <li className="badge">Micro-Frontends</li>
                         <li className="badge">GraphQL</li>
-                        <li className="badge">LaunchDarkly</li>
-                        <li className="badge">Mixpanel</li>
-                        <li className="badge">SSR</li>
-                        <li className="badge">Virtualization</li>
-                        <li className="badge">A/B Testing</li>
+                        <li className="badge">AWS ECS</li>
+                        <li className="badge">OpenSearch</li>
+                        <li className="badge">LLM Tooling</li>
                     </ul>
                     <p />
                 </a>
@@ -97,37 +84,24 @@ export default function Experience() {
                         <small title="Duration">OCT 2022 - MAY 2025</small>
                     </p>
                     <p className="mt-2 text-sm leading-normal">
-                        Architected and delivered 4 micro-frontends for enterprise B2B SaaS
-                        product, enabling modular deployment and driving a 15% increase in
-                        adoption.
+                        Architected and shipped 4 micro-frontends for an enterprise B2B SaaS platform, enabling autonomous squad deployments and increasing feature adoption by 15%.
                         <br />
-                        Re-engineered legacy Ember applications into React + Hooks, reducing
-                        load times by 10% and improving long-term maintainability.
+                        Re-engineered legacy Ember components into React, delivering a high-performance device management dashboard that reduced device setup time from 9 to 5 minutes and improved FCP by 40%.
                         <br />
-                        Contributed to mid-tier monorepo and design system improvements,
-                        reducing UI code duplication across teams.
+                        Built dynamic JSON hydration pipelines for configurable UI workflows, optimizing REST API integrations to sustain sub-500ms median latency.
                         <br />
-                        Integrated and optimized REST API workflows with sub-200ms median
-                        response times across daily transactions.
+                        Engineered automated end-to-end test suites using Playwright and Mocha, slashing manual QA verification cycles by 95%.
                         <br />
-                        Mentored 3 frontend engineers in component patterns, testing strategy,
-                        and accessibility best practices.
-                        <br />
-                        Led sprint planning, technical grooming, and cross-team reviews
-                        improving delivery predictability.
-                        <br />
-                        Improved observability by designing Datadog dashboards for latency,
-                        client errors, and UX metrics.
+                        Designed comprehensive Datadog telemetry dashboards tracking client-side errors and network latency to maintain 99.9% UI operational reliability.
                     </p>
                     <ul className="badge-wrapper">
-                        <li className="badge">React</li>
-                        <li className="badge">Ember</li>
-                        <li className="badge">TypeScript</li>
                         <li className="badge">Micro-frontends</li>
-                        <li className="badge">REST API</li>
+                        <li className="badge">React</li>
+                        <li className="badge">TypeScript</li>
+                        <li className="badge">Playwright</li>
+                        <li className="badge">Mocha</li>
                         <li className="badge">Datadog</li>
-                        <li className="badge">Design Systems</li>
-                        <li className="badge">Mentoring</li>
+                        <li className="badge">REST API</li>
                     </ul>
                     <p />
                 </a>
@@ -161,85 +135,23 @@ export default function Experience() {
                         <small title="Duration">DEC 2018 - OCT 2022</small>
                     </p>
                     <p className="mt-2 text-sm leading-normal">
-                        Built 20+ reusable React components and marketing features for global
-                        clients, improving engagement and reusability.
+                        Developed 20+ reusable React components across enterprise design systems, integrating with Adobe Experience Manager (AEM) and Salesforce Marketing Cloud.
                         <br />
-                        Designed and developed a custom WYSIWYG editor, reducing editorial
-                        go-live time and increasing workflow efficiency.
+                        Built an in-house interactive quiz platform to replace a third-party solution, integrating natively with Google Analytics and CRM services while preserving existing tracking schemas and eliminating intermediary data integrations.
                         <br />
-                        Implemented code-splitting and async-loading patterns, improving page
-                        performance by 20%.
-                        <br />
-                        Led the design, testing and deployment of 4+ React web components
-                        yielding a 10% increase in content loading speed, 10,000+ new leads
-                        captured and increased revenue.
-                        <br />
-                        Mentored 4 junior developers through structured project-based learning
-                        and architecture sessions.
-                        <br />
-                        Successfully delivered 6+ web components to optimize lead capture for a
-                        major US-based pharmaceutical manufacturer.
+                        Built high-throughput Python and Node.js data validation and de-duplication pipelines deployed on AWS, paired with React proof-of-concept interfaces.
                     </p>
                     <ul className="badge-wrapper">
                         <li className="badge">React</li>
-                        <li className="badge">JavaScript</li>
-                        <li className="badge">HTML5</li>
-                        <li className="badge">CSS3</li>
-                        <li className="badge">Redux</li>
-                        <li className="badge">Webpack</li>
-                        <li className="badge">Babel</li>
-                        <li className="badge">Material UI</li>
-                        <li className="badge">Bootstrap</li>
-                        <li className="badge">Web Accessibility</li>
-                        <li className="badge">Cypress</li>
-                        <li className="badge">Git</li>
-                        <li className="badge">Jira</li>
-                        <li className="badge">Confluence</li>
-                        <li className="badge">NPM</li>
-                        <li className="badge">Test automation</li>
+                        <li className="badge">Python</li>
                         <li className="badge">Node.js</li>
-                        <li className="badge">MySQL</li>
-                        <li className="badge">SQL</li>
+                        <li className="badge">AWS</li>
+                        <li className="badge">AEM</li>
+                        <li className="badge">Salesforce</li>
                     </ul>
                     <p />
                 </a>
-                <a href="https://www.nagarro.com/en" target="_blank" className="exp">
-                    <span className="title link-svg" title="Job title">
-                        Financial Planning Association ・ Nagarro
-                        <svg
-                            role="presentation"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                            aria-hidden="true"
-                        >
-                            <path
-                                fillRule="evenodd"
-                                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                clipRule="evenodd"
-                            />
-                        </svg>
-                    </span>
-                    <p>
-                        <small title="Duration">MAR 2019 - OCT 2019</small>
-                    </p>
-                    <p className="mt-2 text-sm leading-normal">
-                        Built 5+ micro-sites and 10+ landing pages for the product portfolio website
-                        and marketing campaigns. Collaborated with a team of designers, developers,
-                        and content writers to create engaging and informative content. Successfully
-                        launched micro-sites and landing pages that increased lead generation by 12%
-                        and increased sales.
-                    </p>
-                    <ul className="badge-wrapper">
-                        <li className="badge">HTML</li>
-                        <li className="badge">CSS</li>
-                        <li className="badge">JavaScript</li>
-                        <li className="badge">Bootstrap</li>
-                        <li className="badge">Responsive website</li>
-                    </ul>
-                    <p />
-                </a>
+
                 <div className="text-center">
                     <a
                         className="my-1 underline-link link-svg"

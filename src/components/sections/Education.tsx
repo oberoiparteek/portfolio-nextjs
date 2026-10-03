@@ -1,22 +1,22 @@
 import MotionSection from "@/components/MotionSection";
 import StickyHeader from "@/components/StickyHeader";
 
-export default function Publications() {
+export default function Education() {
     return (
-        <MotionSection id="publications">
+        <MotionSection id="education">
             <StickyHeader
-                title="Publications"
+                title="Education"
                 icon={
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                     </svg>
                 }
             />
             <div className="experiences">
-                <a href="https://aclanthology.org/" target="_blank" className="exp">
-                    <span className="title link-svg" title="Publication">
-                        Probing Audio-Generation Capabilities of Text-Based LLMs ・ NAACL SRW
+                <a href="https://online.gndu.ac.in/" target="_blank" className="exp">
+                    <span className="title link-svg" title="Degree">
+                        Master of Computer Applications (MCA) ・ Guru Nanak Dev University
                         <svg
                             role="presentation"
                             xmlns="http://www.w3.org/2000/svg"
@@ -33,18 +33,8 @@ export default function Publications() {
                         </svg>
                     </span>
                     <p>
-                        <small title="Publication Year">2025</small>
+                        <small title="GPA">Score: 8.7 / 10.0</small>
                     </p>
-                    <p className="mt-2 text-sm leading-normal">
-                        Investigated whether text-based language models exhibit latent audio-generation capabilities through systematic evaluation across speech, environmental sounds, and musical audio datasets.
-                    </p>
-                    <ul className="badge-wrapper">
-                        <li className="badge">Research</li>
-                        <li className="badge">LLMs</li>
-                        <li className="badge">Audio Generation</li>
-                        <li className="badge">NLP</li>
-                        <li className="badge">NAACL 2025</li>
-                    </ul>
                     <p />
                 </a>
             </div>
