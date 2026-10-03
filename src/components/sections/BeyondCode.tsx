@@ -15,7 +15,7 @@ export default function BeyondCode() {
                     </svg>
                 }
             />
-            <p style={{ lineHeight: '1.8' }}>
+                        <p style={{ lineHeight: '1.8' }}>
                 Outside of the terminal, I enjoy the focus and strategy of{" "}
                 <span className="tooltip">
                     <span className="fortnite-pointer font-bold" style={{ color: 'var(--text-heading-color)' }}>Fortnite</span> and <span className="sniper-pointer font-bold" style={{ color: 'var(--text-heading-color)' }}>Call of Duty</span>
@@ -24,6 +24,9 @@ export default function BeyondCode() {
                     </span>
                 </span>
                 . Just like in development, precision and quick decision-making are key!
+            </p>
+            <p style={{ lineHeight: '1.8', marginTop: '1rem' }}>
+                I'm also a huge Anime fan. Combining my love for code and anime, I built a fun little <a href="https://onepiececrewbuilder2.vercel.app/" target="_blank" rel="noreferrer" style={{ color: 'var(--color-marine)', textDecoration: 'underline', textUnderlineOffset: '4px', fontWeight: 500 }}>One Piece Crew Builder</a> web game.
             </p>
         </MotionSection>
     );
