@@ -31,7 +31,7 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-:root {
+:root, [data-theme='dark'] {
     --text-heading-color: #D0DAED;
     --text-s-color: 148, 163, 184;
     --long--span--bar: 5rem;
@@ -41,11 +41,31 @@
     --font-size-small: 0.9rem;
     --sniper-url: 'images/sniperx.png';
     --img-email: 'images/Email.png';
-    --color-background: rgb(15 23 42/1);
+    --color-background: rgb(15, 23, 42);
     --color-yellow: rgb(218, 176, 39);
     --color-yellow-bg: rgb(79, 62, 5);
-    --color-nav-uiblur-stuck: rgba(15, 23, 42, 0.7); // Dark semi-transparent fallback
+    --color-nav-uiblur-stuck: rgba(15, 23, 42, 0.7);
+    --grid-color: rgba(255, 255, 255, 0.03);
+    --glass-bg-start: rgba(255, 255, 255, 0.05);
+    --glass-bg-end: rgba(255, 255, 255, 0.01);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --cursor-bg-center: rgb(16, 29, 64);
+    --cursor-bg-edge: rgb(15, 23, 42);
+}
 
+[data-theme='light'] {
+    --text-heading-color: #0F172A;
+    --text-s-color: 71, 85, 105;
+    --color-marine: rgb(13, 148, 136);
+    --color-bg-marine-light: rgba(13, 148, 136, 0.1);
+    --color-background: rgb(248, 250, 252);
+    --color-nav-uiblur-stuck: rgba(248, 250, 252, 0.7);
+    --grid-color: rgba(0, 0, 0, 0.04);
+    --glass-bg-start: rgba(0, 0, 0, 0.03);
+    --glass-bg-end: rgba(0, 0, 0, 0.01);
+    --glass-border: rgba(0, 0, 0, 0.08);
+    --cursor-bg-center: rgba(13, 148, 136, 0.08);
+    --cursor-bg-edge: rgb(248, 250, 252);
 }
 
 body,
@@ -65,6 +85,8 @@ body {
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     transition-duration: .15s;
     background-color: var(--color-background);
+    background-image: linear-gradient(var(--grid-color) 1px, transparent 1px), linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+    background-size: 32px 32px;
     color: var(--text-heading-color);
     font-family: 'Inter', sans-serif;
     font-feature-settings: "ss03", "cv02", "cv11";
@@ -558,7 +580,9 @@ body {
             >.exp {
                 display: block;
                 margin: 20px 0;
-                padding: 20px;
+                padding: 32px;
+                border: 1px solid transparent;
+                transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 
 
 
@@ -568,15 +592,18 @@ body {
 
                 .badge-wrapper {
                     opacity: 0.45;
+                    transition: opacity 0.3s ease;
                 }
 
                 &:hover {
-                    /* From https://css.glass */
-                    background: rgba(239, 239, 239, 0.064);
-                    border-radius: 10px;
-                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                    backdrop-filter: blur(5px);
-                    -webkit-backdrop-filter: blur(5px);
+                    /* Apple Glassmorphism */
+                    background: linear-gradient(135deg, var(--glass-bg-start) 0%, var(--glass-bg-end) 100%);
+                    border: 1px solid var(--glass-border);
+                    border-radius: 12px;
+                    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+                    transform: translateY(-4px);
+                    backdrop-filter: blur(16px);
+                    -webkit-backdrop-filter: blur(16px);
 
                     .title {
                         color: var(--color-marine);
@@ -625,14 +652,12 @@ body {
         opacity: 0.7;
         position: absolute;
         z-index: -1;
-        background: rgb(255, 255, 255);
-        background: radial-gradient(circle, rgb(16, 29, 64) 2%, rgb(16, 29, 64) 15%, rgb(15 23 42/1) 64%);
+        background: radial-gradient(circle, var(--cursor-bg-center) 2%, var(--cursor-bg-center) 15%, var(--cursor-bg-edge) 64%);
         border-radius: 50%;
         width: 800px;
         height: 800px;
         overflow: hidden;
         transform: translate(-50%, -50%);
-
     }
 }
 

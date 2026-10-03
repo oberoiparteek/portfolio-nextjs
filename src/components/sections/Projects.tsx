@@ -35,9 +35,11 @@ export default function Projects() {
                             />
                         </svg>
                     </span>
-                    <p className="mt-2 text-sm leading-normal">
-                        Spearheaded the frontend architecture for multiple micro-frontend applications within a global enterprise event management platform. Engineered an advanced Konva.js integration for dynamic visual rendering, paired with scalable AWS Fargate services to handle high-throughput, automated artifact generation for attendee credentialing. Additionally, developed secure administrative portals for event organizers featuring complex role-based access control and collaboration workflows, seamlessly integrating these UIs with distributed backend services via GraphQL.
-                    </p>
+                    <ul className="mt-2 text-sm leading-normal list-disc ml-6 space-y-2">
+                        <li>Spearheaded the frontend architecture for multiple micro-frontend applications within a global enterprise event management platform.</li>
+                        <li>Engineered an advanced Konva.js integration for dynamic visual rendering, paired with scalable AWS Fargate services to handle high-throughput, automated artifact generation for attendee credentialing.</li>
+                        <li>Developed secure administrative portals for event organizers featuring complex role-based access control and collaboration workflows, seamlessly integrating these UIs with distributed backend services via GraphQL.</li>
+                    </ul>
                     <ul className="badge-wrapper">
                         <li className="badge">Micro-Frontends</li>
                         <li className="badge">React 19</li>
@@ -71,13 +73,11 @@ export default function Projects() {
                             />
                         </svg>
                     </span>
-                    <p className="mt-2 text-sm leading-normal">
-                        Developed 10+ reusable and performant UI screens and components using
-                        Ciena’s Frost Components to add new features to the product. Delivered 3
-                        end-to-end features within small agile teams, from development to testing,
-                        and deployment. Utilized JavaScript, React, Ember, SCSS, HTML and WebStorm
-                        to create reliable, and robust web components.
-                    </p>
+                    <ul className="mt-2 text-sm leading-normal list-disc ml-6 space-y-2">
+                        <li>Developed 10+ reusable and performant UI screens and components using Ciena’s Frost Components to add new features to the product.</li>
+                        <li>Delivered 3 end-to-end features within small agile teams, from development to testing, and deployment.</li>
+                        <li>Utilized JavaScript, React, Ember, SCSS, HTML and WebStorm to create reliable, and robust web components.</li>
+                    </ul>
                     <ul className="badge-wrapper">
                         <li className="badge">Ember</li>
                         <li className="badge">React</li>
@@ -109,14 +109,12 @@ export default function Projects() {
                     <p>
                         <small title="Duration">JAN 2021 - OCT 2022</small>
                     </p>
-                    <p className="mt-2 text-sm leading-normal">
-                        Lead team in overhauling lead capturing and nurturing process, resulting in
-                        a 20% lead conversion rate increase. Conducted feasibility study and created
-                        design documents for new lead capturing and nurturing system. Developed and
-                        delivered 4+ React web components for AEM web application, improving user
-                        experience and increasing active users. Developed 7+ microsites for the
-                        product portfolio and marketing automation teams.
-                    </p>
+                    <ul className="mt-2 text-sm leading-normal list-disc ml-6 space-y-2">
+                        <li>Lead team in overhauling lead capturing and nurturing process, resulting in a 20% lead conversion rate increase.</li>
+                        <li>Conducted feasibility study and created design documents for new lead capturing and nurturing system.</li>
+                        <li>Developed and delivered 4+ React web components for AEM web application, improving user experience and increasing active users.</li>
+                        <li>Developed 7+ microsites for the product portfolio and marketing automation teams.</li>
+                    </ul>
                     <ul className="badge-wrapper">
                         <li className="badge">React</li>
                         <li className="badge">Redux</li>
@@ -152,14 +150,11 @@ export default function Projects() {
                     <p>
                         <small title="Duration">OCT 2019 - JAN 2021</small>
                     </p>
-                    <p className="mt-2 text-sm leading-normal">
-                        Collaborated with a cross-functional team to design and implement data
-                        pipelines to migrate 50000+ records from the acquired to the parent
-                        organization. Engineered and automated migration for 10+ relational objects
-                        using staging MYSQL tables to improve data consistency across products.
-                        Implemented and scheduled 10+ Data Governance workflows to perform data
-                        transformations using JavaScript and MYSQL.
-                    </p>
+                    <ul className="mt-2 text-sm leading-normal list-disc ml-6 space-y-2">
+                        <li>Collaborated with a cross-functional team to design and implement data pipelines to migrate 50000+ records from the acquired to the parent organization.</li>
+                        <li>Engineered and automated migration for 10+ relational objects using staging MYSQL tables to improve data consistency across products.</li>
+                        <li>Implemented and scheduled 10+ Data Governance workflows to perform data transformations using JavaScript and MYSQL.</li>
+                    </ul>
                     <ul className="badge-wrapper">
                         <li className="badge">JavaScript</li>
                         <li className="badge">Tray.io</li>
@@ -191,13 +186,11 @@ export default function Projects() {
                     <p>
                         <small title="Duration">MAR 2019 - OCT 2019</small>
                     </p>
-                    <p className="mt-2 text-sm leading-normal">
-                        Built 5+ micro-sites and 10+ landing pages for the product portfolio website
-                        and marketing campaigns. Collaborated with a team of designers, developers,
-                        and content writers to create engaging and informative content. Successfully
-                        launched micro-sites and landing pages that increased lead generation by 12%
-                        and increased sales.
-                    </p>
+                    <ul className="mt-2 text-sm leading-normal list-disc ml-6 space-y-2">
+                        <li>Built 5+ micro-sites and 10+ landing pages for the product portfolio website and marketing campaigns.</li>
+                        <li>Collaborated with a team of designers, developers, and content writers to create engaging and informative content.</li>
+                        <li>Successfully launched micro-sites and landing pages that increased lead generation by 12% and increased sales.</li>
+                    </ul>
                     <ul className="badge-wrapper">
                         <li className="badge">HTML</li>
                         <li className="badge">CSS</li>

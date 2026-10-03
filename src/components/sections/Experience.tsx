@@ -35,19 +35,14 @@ export default function Experience() {
                     <p>
                         <small title="Duration">MAY 2025 - PRESENT</small>
                     </p>
-                    <p className="mt-2 text-sm leading-normal">
-                        Served as the frontend owner for 4 production micro-frontends, directing architectural decisions, RFCs, code quality standards, and end-to-end production delivery.
-                        <br />
-                        Architected a reusable React form platform with drag-and-drop configuration, dynamic validation, localization, and accessibility, adopted by 3 product squads across engagement workflows.
-                        <br />
-                        Partnered with backend engineers to scale an asynchronous PDF generation platform processing 1M+ cumulative artifacts via AWS ECS Fargate, and engineered a parallel browser-based rendering prototype using HTML-to-canvas, jsPDF, and ZIP packaging.
-                        <br />
-                        Decoupled configuration reads from a monolithic GraphQL architecture by integrating an OpenSearch-backed service via Server-to-Server (S2S) calls, offloading ~50% of the payload and substantially improving configuration load times in development.
-                        <br />
-                        Built a secure magic-link access flow, enabling users to retrieve generated certificates directly from email without requiring a full authenticated application session.
-                        <br />
-                        Integrated LLM-driven tooling into internal developer workflows, introducing 3+ custom agent skills for automated test generation and delivering 3–5 minutes of self-reported time savings per use case.
-                    </p>
+                    <ul className="mt-2 text-sm leading-normal list-disc ml-6 space-y-2">
+                        <li>Served as the frontend owner for 4 production micro-frontends, directing architectural decisions, RFCs, code quality standards, and end-to-end production delivery.</li>
+                        <li>Architected a reusable React form platform with drag-and-drop configuration, dynamic validation, localization, and accessibility, adopted by 3 product squads across engagement workflows.</li>
+                        <li>Partnered with backend engineers to scale an asynchronous PDF generation platform processing 1M+ cumulative artifacts via AWS ECS Fargate, and engineered a parallel browser-based rendering prototype using HTML-to-canvas, jsPDF, and ZIP packaging.</li>
+                        <li>Decoupled configuration reads from a monolithic GraphQL architecture by integrating an OpenSearch-backed service via Server-to-Server (S2S) calls, offloading ~50% of the payload and substantially improving configuration load times in development.</li>
+                        <li>Built a secure magic-link access flow, enabling users to retrieve generated certificates directly from email without requiring a full authenticated application session.</li>
+                        <li>Integrated LLM-driven tooling into internal developer workflows, introducing 3+ custom agent skills for automated test generation and delivering 3–5 minutes of self-reported time savings per use case.</li>
+                    </ul>
                     <ul className="badge-wrapper">
                         <li className="badge">React 19</li>
                         <li className="badge">Micro-Frontends</li>
@@ -83,17 +78,13 @@ export default function Experience() {
                     <p>
                         <small title="Duration">OCT 2022 - MAY 2025</small>
                     </p>
-                    <p className="mt-2 text-sm leading-normal">
-                        Architected and shipped 4 micro-frontends for an enterprise B2B SaaS platform, enabling autonomous squad deployments and increasing feature adoption by 15%.
-                        <br />
-                        Re-engineered legacy Ember components into React, delivering a high-performance device management dashboard that reduced device setup time from 9 to 5 minutes and improved FCP by 40%.
-                        <br />
-                        Built dynamic JSON hydration pipelines for configurable UI workflows, optimizing REST API integrations to sustain sub-500ms median latency.
-                        <br />
-                        Engineered automated end-to-end test suites using Playwright and Mocha, slashing manual QA verification cycles by 95%.
-                        <br />
-                        Designed comprehensive Datadog telemetry dashboards tracking client-side errors and network latency to maintain 99.9% UI operational reliability.
-                    </p>
+                    <ul className="mt-2 text-sm leading-normal list-disc ml-6 space-y-2">
+                        <li>Architected and shipped 4 micro-frontends for an enterprise B2B SaaS platform, enabling autonomous squad deployments and increasing feature adoption by 15%.</li>
+                        <li>Re-engineered legacy Ember components into React, delivering a high-performance device management dashboard that reduced device setup time from 9 to 5 minutes and improved FCP by 40%.</li>
+                        <li>Built dynamic JSON hydration pipelines for configurable UI workflows, optimizing REST API integrations to sustain sub-500ms median latency.</li>
+                        <li>Engineered automated end-to-end test suites using Playwright and Mocha, slashing manual QA verification cycles by 95%.</li>
+                        <li>Designed comprehensive Datadog telemetry dashboards tracking client-side errors and network latency to maintain 99.9% UI operational reliability.</li>
+                    </ul>
                     <ul className="badge-wrapper">
                         <li className="badge">Micro-frontends</li>
                         <li className="badge">React</li>
@@ -134,13 +125,11 @@ export default function Experience() {
                     <p>
                         <small title="Duration">DEC 2018 - OCT 2022</small>
                     </p>
-                    <p className="mt-2 text-sm leading-normal">
-                        Developed 20+ reusable React components across enterprise design systems, integrating with Adobe Experience Manager (AEM) and Salesforce Marketing Cloud.
-                        <br />
-                        Built an in-house interactive quiz platform to replace a third-party solution, integrating natively with Google Analytics and CRM services while preserving existing tracking schemas and eliminating intermediary data integrations.
-                        <br />
-                        Built high-throughput Python and Node.js data validation and de-duplication pipelines deployed on AWS, paired with React proof-of-concept interfaces.
-                    </p>
+                    <ul className="mt-2 text-sm leading-normal list-disc ml-6 space-y-2">
+                        <li>Developed 20+ reusable React components across enterprise design systems, integrating with Adobe Experience Manager (AEM) and Salesforce Marketing Cloud.</li>
+                        <li>Built an in-house interactive quiz platform to replace a third-party solution, integrating natively with Google Analytics and CRM services while preserving existing tracking schemas and eliminating intermediary data integrations.</li>
+                        <li>Built high-throughput Python and Node.js data validation and de-duplication pipelines deployed on AWS, paired with React proof-of-concept interfaces.</li>
+                    </ul>
                     <ul className="badge-wrapper">
                         <li className="badge">React</li>
                         <li className="badge">Python</li>

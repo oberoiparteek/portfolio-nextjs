@@ -41,6 +41,7 @@ export const metadata: Metadata = {
 };
 
 import Cursor from "@/components/Cursor";
+import { ThemeProvider } from "./providers";
 
 export default function RootLayout({
   children,
@@ -48,10 +49,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body className="font-sans">
-        <Cursor />
-        {children}
+        <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem>
+          <Cursor />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -2,6 +2,7 @@
 "use client";
 
 import { useActiveSection } from "@/hooks/useActiveSection";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
     const activeSection = useActiveSection();
@@ -88,7 +89,8 @@ export default function Header() {
             </div>
             <div className="contact">
                 <div className="wrapper">
-                    <ul aria-label="Social media">
+                    <ul aria-label="Social media" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                        <li><ThemeToggle /></li>
                         <li className="tooltip">
                             <a
                                 href="https://github.com/oberoiparteek"

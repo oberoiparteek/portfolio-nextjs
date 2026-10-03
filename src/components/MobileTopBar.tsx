@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-mot
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import logo from "@/app/images/logo.png";
+import ThemeToggle from "./ThemeToggle";
 
 export default function MobileTopBar() {
     const { toggle, isOpen } = useMobileNav();
@@ -100,13 +101,15 @@ export default function MobileTopBar() {
                     />
                 </motion.div>
 
-                <button
-                    onClick={toggle}
-                    className="mobile-menu-btn"
-                    aria-label="Toggle navigation menu"
-                    // Keep button always fully visible
-                    style={{ opacity: 1 }}
-                >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                    <ThemeToggle />
+                    <button
+                        onClick={toggle}
+                        className="mobile-menu-btn"
+                        aria-label="Toggle navigation menu"
+                        // Keep button always fully visible
+                        style={{ opacity: 1 }}
+                    >
                     {isOpen ? (
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -139,7 +142,8 @@ export default function MobileTopBar() {
                             <line x1="3" y1="18" x2="21" y2="18"></line>
                         </svg>
                     )}
-                </button>
+                    </button>
+                </div>
             </div>
         </motion.div>
     );
