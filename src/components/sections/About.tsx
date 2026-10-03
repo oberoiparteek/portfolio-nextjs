@@ -13,7 +13,7 @@ export default function About() {
                         width={96}
                         height={96}
                         className="w-24 h-24 rounded-full shadow-md border-2"
-                        style={{ width: '96px', height: '96px', minWidth: '96px', minHeight: '96px', borderColor: 'rgba(92, 229, 213, 0.4)', objectFit: 'cover' }}
+                        style={{ width: '96px', height: '96px', minWidth: '96px', minHeight: '96px', borderRadius: '50%', borderColor: 'rgba(92, 229, 213, 0.4)', objectFit: 'cover' }}
                         priority
                     />
                 </div>
