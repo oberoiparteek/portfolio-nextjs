@@ -56,11 +56,8 @@ export default function Experience() {
                     <p />
                 </a>
                 </TiltCard>
-                <a
-                    href="https://www.ciena.com/products/manage-control-plan"
-                    target="_blank"
-                    className="exp"
-                >
+                <TiltCard>
+                <a href="https://www.ciena.com/products/manage-control-plan" target="_blank" className="exp">
                     <span className="title link-svg" title="Job title">
                         Software Development Engineer 2A ・ Ciena
                         <svg
@@ -99,6 +96,7 @@ export default function Experience() {
                     </ul>
                     <p />
                 </a>
+                </TiltCard>
                 <TiltCard>
                 <a href="https://www.nagarro.com/en" target="_blank" className="exp">
                     <span className="title link-svg" title="Job title">
