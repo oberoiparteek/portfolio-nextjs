@@ -21,7 +21,7 @@ export default function SidebarNav() {
             </div>
 
             <ul className="nav" style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-                {["about", "skills", "experience", "education", "projects", "publications", "volunteering"].map((item) => (
+                {["about", "experience", "skills", "education", "projects", "publications", "volunteering", "beyond-code"].map((item) => (
                     <li key={item} className={activeSection === item ? "active" : ""} style={{ padding: 0 }}>
                         <a 
                             href={`#${item}`} 
@@ -46,7 +46,7 @@ export default function SidebarNav() {
                                 }}
                             />
                             <small style={{ fontSize: '0.8rem', fontWeight: activeSection === item ? 700 : 500, letterSpacing: '1px' }}>
-                                {item.toUpperCase()}
+                                {item.replace('-', ' ').toUpperCase()}
                             </small>
                         </a>
                     </li>

@@ -38,7 +38,7 @@ export default function HorizontalNav({ position }: { position: "top" | "bottom"
             }}
         >
             <ul className="nav" style={{ display: 'flex', flexDirection: 'row', gap: '2.5rem', margin: 0, padding: 0 }}>
-                {["about", "skills", "experience", "education", "projects", "publications", "volunteering"].map((item) => (
+                {["about", "experience", "skills", "education", "projects", "publications", "volunteering", "beyond-code"].map((item) => (
                     <li key={item} style={{ listStyle: 'none', padding: 0 }}>
                         <a 
                             href={`#${item}`} 

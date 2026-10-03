@@ -92,7 +92,7 @@ export default function MobileMenu() {
                             {/* Added Resume Download Link here since we removed FAB */}
                             <li style={{ marginTop: '12px', borderTop: '1px solid rgba(92, 229, 213, 0.2)', paddingTop: '12px' }}>
                                 <a
-                                    href="/resume"
+                                    href="/r"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="mobile-nav-link"

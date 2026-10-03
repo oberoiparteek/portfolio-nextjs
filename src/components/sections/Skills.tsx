@@ -15,9 +15,9 @@ export default function Skills() {
             />
             <div className="skills">
                 <div className="frontend">
-                    <span>Frontend Architecture:</span>
+                    <h3 style={{ color: "var(--text-heading-color)", fontWeight: 600, marginTop: "0.5rem", marginBottom: "0.75rem", fontSize: "1.1rem" }}>Frontend Architecture</h3>
                     <ul className="badge-wrapper green">
-                        <li className="badge">React 19 & RSC</li>
+                        <li className="badge">React & RSC</li>
                         <li className="badge">Next.js (App Router, PPR)</li>
                         <li className="badge">TypeScript</li>
                         <li className="badge">Konva.js</li>
@@ -29,8 +29,8 @@ export default function Skills() {
                     </ul>
                 </div>
                 <div className="sdetools">
-                    <span>Engineering Excellence:</span>
-                    <ul className="badge-wrapper yellow">
+                    <h3 style={{ color: "var(--text-heading-color)", fontWeight: 600, marginTop: "2rem", marginBottom: "0.75rem", fontSize: "1.1rem" }}>Engineering Excellence</h3>
+                    <ul className="badge-wrapper green">
                         <li className="badge">LLM Agent Tooling</li>
                         <li className="badge">Playwright</li>
                         <li className="badge">Mocha</li>
@@ -40,13 +40,13 @@ export default function Skills() {
                     </ul>
                 </div>
                 <div className="backend">
-                    <span>Backend & Cloud:</span>
-                    <ul className="badge-wrapper red">
+                    <h3 style={{ color: "var(--text-heading-color)", fontWeight: 600, marginTop: "2rem", marginBottom: "0.75rem", fontSize: "1.1rem" }}>Backend & Cloud</h3>
+                    <ul className="badge-wrapper green">
                         <li className="badge">Node.js</li>
                         <li className="badge">Python</li>
-                        <li className="badge">GraphQL (Apollo Federation)</li>
+                        <li className="badge">GraphQL · Apollo</li>
                         <li className="badge">AWS (ECS Fargate)</li>
-                        <li className="badge">OpenSearch</li>
+                        
                         <li className="badge">REST APIs</li>
                         <li className="badge">Microservices</li>
                     </ul>

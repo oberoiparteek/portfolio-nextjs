@@ -16,7 +16,12 @@ export default function Projects() {
             <div className="experiences">
                 <TiltCard>
                 <a href="https://www.cvent.com/" target="_blank" className="exp">
-                    <span className="title link-svg" title="Project">
+                    <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '0.5rem' }}>
+                        <div style={{ padding: "10px", borderRadius: "8px", background: "rgba(92, 229, 213, 0.1)", color: "var(--color-marine)", flexShrink: 0, width: "44px", height: "44px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                        <div>
+                            <span className="title link-svg text-lg" title="Project" style={{ display: 'flex', alignItems: 'center' }}>
                         Enterprise Event Management Platform ・ Cvent
                         <svg
                             role="presentation"
@@ -31,9 +36,11 @@ export default function Projects() {
                                 d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
                                 clipRule="evenodd"
                             />
-                        </svg>
-                    </span>
-                    <ul className="mt-2 text-sm leading-normal list-disc ml-6 space-y-2">
+                        </svg></span>
+<p>
+<small title="Duration">MAY 2025 - PRESENT</small>
+</p>
+<ul className="mt-2 text-sm leading-normal list-disc ml-6 space-y-2">
                         <li>Spearheaded the frontend architecture for multiple micro-frontend applications within a global enterprise event management platform.</li>
                         <li>Engineered an advanced Konva.js integration for dynamic visual rendering, paired with scalable AWS Fargate services to handle high-throughput, automated artifact generation for attendee credentialing.</li>
                         <li>Developed secure administrative portals for event organizers featuring complex role-based access control and collaboration workflows, seamlessly integrating these UIs with distributed backend services via GraphQL.</li>
@@ -47,12 +54,16 @@ export default function Projects() {
                         <li className="badge">GraphQL</li>
                         <li className="badge">RBAC</li>
                     </ul>
-                    <p />
-                </a>
+                    <p /></div></div></a>
                 </TiltCard>
                 <TiltCard>
                 <a href="https://www.ciena.com/products/manage-control-plan" target="_blank" className="exp">
-                    <span className="title link-svg" title="Job title">
+                    <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '0.5rem' }}>
+                        <div style={{ padding: "10px", borderRadius: "8px", background: "rgba(92, 229, 213, 0.1)", color: "var(--color-marine)", flexShrink: 0, width: "44px", height: "44px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                        </div>
+                        <div>
+                            <span className="title link-svg text-lg" title="Job title" style={{ display: 'flex', alignItems: 'center' }}>
                         MCP (Manage Control Plan) Controller application・ Ciena
                         <svg
                             role="presentation"
@@ -67,9 +78,11 @@ export default function Projects() {
                                 d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
                                 clipRule="evenodd"
                             />
-                        </svg>
-                    </span>
-                    <ul className="mt-2 text-sm leading-normal list-disc ml-6 space-y-2">
+                        </svg></span>
+<p>
+<small title="Duration">OCT 2022 - MAY 2025</small>
+</p>
+<ul className="mt-2 text-sm leading-normal list-disc ml-6 space-y-2">
                         <li>Developed 10+ reusable and performant UI screens and components using Ciena’s Frost Components to add new features to the product.</li>
                         <li>Delivered 3 end-to-end features within small agile teams, from development to testing, and deployment.</li>
                         <li>Utilized JavaScript, React, Ember, SCSS, HTML and WebStorm to create reliable, and robust web components.</li>
@@ -82,12 +95,16 @@ export default function Projects() {
                         <li className="badge">JavaScript</li>
                         <li className="badge">TypeScript</li>
                     </ul>
-                    <p />
-                </a>
+                    <p /></div></div></a>
                 </TiltCard>
                 <TiltCard>
                 <a href="https://www.nagarro.com/en" target="_blank" className="exp">
-                    <span className="title link-svg" title="Job title">
+                    <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '0.5rem' }}>
+                        <div style={{ padding: "10px", borderRadius: "8px", background: "rgba(92, 229, 213, 0.1)", color: "var(--color-marine)", flexShrink: 0, width: "44px", height: "44px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                        </div>
+                        <div>
+                            <span className="title link-svg text-lg" title="Job title" style={{ display: 'flex', alignItems: 'center' }}>
                         US manufacturer of biomedical devices (Client Site) ・ Nagarro
                         <svg
                             role="presentation"
@@ -102,9 +119,8 @@ export default function Projects() {
                                 d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
                                 clipRule="evenodd"
                             />
-                        </svg>
-                    </span>
-                    <p>
+                        </svg></span>
+<p>
                         <small title="Duration">JAN 2021 - OCT 2022</small>
                     </p>
                     <ul className="mt-2 text-sm leading-normal list-disc ml-6 space-y-2">
@@ -125,12 +141,16 @@ export default function Projects() {
                         <li className="badge">Bootstrap</li>
                         <li className="badge">Git</li>
                     </ul>
-                    <p />
-                </a>
+                    <p /></div></div></a>
                 </TiltCard>
                 <TiltCard>
                 <a href="https://www.nagarro.com/en" target="_blank" className="exp">
-                    <span className="title link-svg" title="Job title">
+                    <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '0.5rem' }}>
+                        <div style={{ padding: "10px", borderRadius: "8px", background: "rgba(92, 229, 213, 0.1)", color: "var(--color-marine)", flexShrink: 0, width: "44px", height: "44px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <div>
+                            <span className="title link-svg text-lg" title="Job title" style={{ display: 'flex', alignItems: 'center' }}>
                         Swedish Identity and security management ・ Nagarro
                         <svg
                             role="presentation"
@@ -145,9 +165,8 @@ export default function Projects() {
                                 d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
                                 clipRule="evenodd"
                             />
-                        </svg>
-                    </span>
-                    <p>
+                        </svg></span>
+<p>
                         <small title="Duration">OCT 2019 - JAN 2021</small>
                     </p>
                     <ul className="mt-2 text-sm leading-normal list-disc ml-6 space-y-2">
@@ -163,12 +182,16 @@ export default function Projects() {
                         <li className="badge">MySQL</li>
                         <li className="badge">ScaleGrid</li>
                     </ul>
-                    <p />
-                </a>
+                    <p /></div></div></a>
                 </TiltCard>
                 <TiltCard>
                 <a href="https://www.nagarro.com/en" target="_blank" className="exp">
-                    <span className="title link-svg" title="Job title">
+                    <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '0.5rem' }}>
+                        <div style={{ padding: "10px", borderRadius: "8px", background: "rgba(92, 229, 213, 0.1)", color: "var(--color-marine)", flexShrink: 0, width: "44px", height: "44px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                        </div>
+                        <div>
+                            <span className="title link-svg text-lg" title="Job title" style={{ display: 'flex', alignItems: 'center' }}>
                         Financial Planning Association ・ Nagarro
                         <svg
                             role="presentation"
@@ -183,9 +206,8 @@ export default function Projects() {
                                 d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
                                 clipRule="evenodd"
                             />
-                        </svg>
-                    </span>
-                    <p>
+                        </svg></span>
+<p>
                         <small title="Duration">MAR 2019 - OCT 2019</small>
                     </p>
                     <ul className="mt-2 text-sm leading-normal list-disc ml-6 space-y-2">
@@ -200,8 +222,7 @@ export default function Projects() {
                         <li className="badge">Bootstrap</li>
                         <li className="badge">Responsive website</li>
                     </ul>
-                    <p />
-                </a>
+                    <p /></div></div></a>
                 </TiltCard>
                 <div className="text-center">
                     <a

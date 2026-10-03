@@ -42,20 +42,32 @@ export default function Experience() {
                     <p>
                         <small title="Duration">MAY 2025 - PRESENT</small>
                     </p>
-                    <ul className="mt-2 text-sm leading-normal list-disc ml-6 space-y-2">
-                        <li>Served as the frontend owner for 4 production micro-frontends, directing architectural decisions, RFCs, code quality standards, and end-to-end production delivery.</li>
-                        <li>Architected a reusable React form platform with drag-and-drop configuration, dynamic validation, localization, and accessibility, adopted by 3 product squads across engagement workflows.</li>
-                        <li>Partnered with backend engineers to scale an asynchronous PDF generation platform processing 1M+ cumulative artifacts via AWS ECS Fargate, and engineered a parallel browser-based rendering prototype using HTML-to-canvas, jsPDF, and ZIP packaging.</li>
-                        <li>Decoupled configuration reads from a monolithic GraphQL architecture by integrating an OpenSearch-backed service via Server-to-Server (S2S) calls, offloading ~50% of the payload and substantially improving configuration load times in development.</li>
-                        <li>Built a secure magic-link access flow, enabling users to retrieve generated certificates directly from email without requiring a full authenticated application session.</li>
-                        <li>Integrated LLM-driven tooling into internal developer workflows, introducing 3+ custom agent skills for automated test generation and delivering 3–5 minutes of self-reported time savings per use case.</li>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', marginTop: '1.5rem', marginBottom: '1.5rem', background: 'rgba(255, 255, 255, 0.03)', padding: '1rem', borderRadius: '8px', border: '1px solid rgba(255, 255, 255, 0.05)' }}>
+                        <div>
+                            <div style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text-heading-color)' }}>4</div>
+                            <div style={{ fontSize: '0.75rem', opacity: 0.7, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Micro-frontends</div>
+                        </div>
+                        <div>
+                            <div style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text-heading-color)' }}>3</div>
+                            <div style={{ fontSize: '0.75rem', opacity: 0.7, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Squads Adopted</div>
+                        </div>
+                        <div>
+                            <div style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text-heading-color)' }}>1M+</div>
+                            <div style={{ fontSize: '0.75rem', opacity: 0.7, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Artifacts Scaled</div>
+                        </div>
+                    </div>
+                    <ul className="text-sm leading-normal list-disc ml-6 space-y-2">
+                        <li><strong>Frontend Ownership:</strong> Directed architectural decisions, RFCs, and end-to-end production delivery across 4 micro-frontends.</li>
+                        <li><strong>Platform Architecture:</strong> Built a reusable React form platform with dynamic validation and accessibility, adopted by 3 product squads.</li>
+                        <li><strong>Distributed Rendering:</strong> Scaled asynchronous PDF generation platform to process 1M+ artifacts via AWS ECS Fargate, and engineered a parallel browser-based rendering prototype.</li>
+                        <li><strong>GraphQL Optimization:</strong> Decoupled configuration reads via Server-to-Server calls, offloading ~50% of the payload and improving load times.</li>
                     </ul>
                     <ul className="badge-wrapper">
-                        <li className="badge">React 19</li>
+                        <li className="badge">React</li>
                         <li className="badge">Micro-Frontends</li>
                         <li className="badge">GraphQL</li>
                         <li className="badge">AWS ECS</li>
-                        <li className="badge">OpenSearch</li>
+                        
                         <li className="badge">LLM Tooling</li>
                     </ul>
                     <p />
@@ -160,30 +172,7 @@ export default function Experience() {
                 </a>
                 </TiltCard>
 
-                <div className="text-center">
-                    <a
-                        className="my-1 underline-link link-svg"
-                        href="/r"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                    >
-                        View Full Resume
-                        <svg
-                            role="presentation"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                            aria-hidden="true"
-                        >
-                            <path
-                                fillRule="evenodd"
-                                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                clipRule="evenodd"
-                            />
-                        </svg>
-                    </a>
-                </div>
+                
             </div>
         </MotionSection>
     );

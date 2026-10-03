@@ -12,8 +12,8 @@ export default function About() {
                         alt="Parteek Kumar"
                         width={96}
                         height={96}
-                        className="w-24 h-24 rounded-full shadow-md border-2"
-                        style={{ width: '96px', height: '96px', minWidth: '96px', minHeight: '96px', borderRadius: '50%', borderColor: 'rgba(92, 229, 213, 0.4)', objectFit: 'cover' }}
+                        className="rounded-full shadow-md border-2"
+                        style={{ width: '120px', height: '120px', minWidth: '120px', minHeight: '120px', borderRadius: '50%', borderColor: 'rgba(92, 229, 213, 0.4)', objectFit: 'cover' }}
                         priority
                     />
                 </div>
@@ -22,9 +22,9 @@ export default function About() {
                     style={{
                         fontFamily: 'var(--font-martian), ui-monospace, monospace',
                         color: 'var(--color-marine)',
-                        opacity: 0.8,
+                        opacity: 1,
                         textTransform: 'uppercase',
-                        fontSize: '0.7rem',
+                        fontSize: '0.75rem',
                         fontWeight: 600
                     }}
                 >
@@ -39,9 +39,52 @@ export default function About() {
                 </h2>
                 <p className="text-base max-w-sm opacity-80" style={{ color: 'rgb(var(--text-s-color))' }}>
                     I build scalable customer-facing web applications and developer tools
-                    that solve real user problems.
-                </p>
-            </div>
+                    that solve real user problems.</p>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', marginTop: '2rem', marginBottom: '2rem' }}>
+                    <a 
+                        href="#experience"
+                        style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            padding: '0.75rem 1.5rem',
+                            fontSize: '0.875rem',
+                            fontWeight: 600,
+                            borderRadius: '9999px',
+                            transition: 'all 0.3s',
+                            background: 'var(--color-marine)',
+                            color: 'rgb(15, 23, 42)',
+                            boxShadow: '0 4px 14px rgba(92, 229, 213, 0.4)',
+                            textDecoration: 'none'
+                        }}
+                    >
+                        Explore Experience <span style={{ marginLeft: "0.5rem" }}>→</span>
+                    </a>
+                    <a 
+                        href="/r"
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            padding: '0.75rem 1.5rem',
+                            fontSize: '0.875rem',
+                            fontWeight: 600,
+                            borderRadius: '9999px',
+                            transition: 'all 0.3s',
+                            background: 'rgba(255, 255, 255, 0.05)',
+                            color: 'var(--text-heading-color)',
+                            border: '1px solid rgba(255, 255, 255, 0.1)',
+                            backdropFilter: 'blur(12px)',
+                            WebkitBackdropFilter: 'blur(12px)',
+                            textDecoration: 'none'
+                        }}
+                    >
+                        View Resume
+                    </a>
+                </div>
+</div>
             <StickyHeader
                 title="About"
                 icon={
@@ -53,25 +96,12 @@ export default function About() {
                 }
             />
             <p>
-                I'm Parteek Kumar, a <b>Senior Frontend Engineer and Tech Lead</b> with over 7 years of
-                experience engineering scalable micro-frontends, distributed rendering systems, and reusable UI platforms.
-                I specialize in the modern web stack—React 19, Next.js (App Router), TypeScript, and GraphQL.
-                I have a proven track record of leading UI architecture across multiple squads, improving frontend performance,
-                and integrating AI/LLM developer workflows.
+                I'm a Senior Frontend Engineer focused on building scalable web applications and developer platforms. I work primarily with React, Next.js, TypeScript, and GraphQL, with a particular interest in frontend architecture, performance, and developer experience.
             </p>
             <p>
-                Outside of the terminal, I enjoy the focus and strategy of{" "}
-                <span className="tooltip">
-                    <span className="fortnite-pointer">Fortnite</span> and <span className="sniper-pointer">Call of Duty</span>
-                    <span className="tooltiptext" style={{ width: 'max-content', bottom: '120%', left: '50%', transform: 'translateX(-50%)' }}>
-                        🎮 Hint: Try the Konami Code! (↑ ↑ ↓ ↓ ← → ← → B A)
-                    </span>
-                </span>
-                . Just like in development, precision and quick decision-making are key!
-                Throughout my career, I've had the privilege of building robust solutions for industries ranging
-                from <b>event management</b> and <b>telecommunications</b> to <b>biotechnology</b>.
-                Recently, I also published peer-reviewed research on <b>Probing Audio-Generation Capabilities of Text-Based LLMs at NAACL SRW 2025</b>, exploring the frontier of AI and frontend interaction.
+                Over the last 7+ years, I've had the privilege of building robust solutions for industries ranging from <b>event management</b> and <b>telecommunications</b> to <b>biotechnology</b>. I enjoy solving problems where complex engineering meets intuitive product UX.
             </p>
+            
         </MotionSection>
     );
 }

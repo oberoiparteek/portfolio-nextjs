@@ -13,7 +13,7 @@ type SettingsContextType = {
 const SettingsContext = createContext<SettingsContextType | undefined>(undefined);
 
 export function SettingsProvider({ children }: { children: React.ReactNode }) {
-  const [enableTilt, setEnableTilt] = useState(true);
+  const [enableTilt, setEnableTilt] = useState(false);
   const [layout, setLayout] = useState<LayoutPos>('left');
   const [mounted, setMounted] = useState(false);
 

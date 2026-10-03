@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function FabDownload() {
     return (
         <motion.a
-            href="/resume"
+            href="/r"
             target="_blank"
             rel="noopener noreferrer"
             className="fab-download"
@@ -15,6 +15,7 @@ export default function FabDownload() {
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
             aria-label="Download Resume"
+            title="Download Resume"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"

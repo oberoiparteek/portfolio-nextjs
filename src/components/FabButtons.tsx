@@ -143,7 +143,7 @@ export default function FabButtons() {
                             style={{ opacity: 1, pointerEvents: 'auto', transform: 'none' }}
                         >
                             <motion.a
-                                href="https://drive.google.com/uc?id=1q3_JnY4aZkErOjITSaG2SyIlLpJ1QfDu&export=download"
+                                href="/r"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="fab-action"
