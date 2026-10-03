@@ -15,7 +15,7 @@ export async function GET(request: NextRequest) {
 
     if (fileExists) {
         const fileBuffer = fs.readFileSync(filePath);
-        const disposition = mode === 'view' ? 'inline' : 'attachment; filename="resume.pdf"';
+        const disposition = mode === 'view' ? 'inline' : 'attachment; filename="Parteek Kumar-Senior SDE frontend.pdf"';
 
         return new NextResponse(fileBuffer, {
             headers: {
