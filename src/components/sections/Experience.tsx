@@ -1,5 +1,6 @@
 import MotionSection from "@/components/MotionSection";
 import StickyHeader from "@/components/StickyHeader";
+import TiltCard from "@/components/TiltCard";
 
 export default function Experience() {
     return (
@@ -14,6 +15,7 @@ export default function Experience() {
                 }
             />
             <div className="experiences">
+                <TiltCard>
                 <a href="https://www.cvent.com/" target="_blank" className="exp">
                     <span className="title link-svg" title="Job title">
                         Senior Frontend Engineer ・ Cvent
@@ -53,6 +55,7 @@ export default function Experience() {
                     </ul>
                     <p />
                 </a>
+                </TiltCard>
                 <a
                     href="https://www.ciena.com/products/manage-control-plan"
                     target="_blank"
@@ -96,6 +99,7 @@ export default function Experience() {
                     </ul>
                     <p />
                 </a>
+                <TiltCard>
                 <a href="https://www.nagarro.com/en" target="_blank" className="exp">
                     <span className="title link-svg" title="Job title">
                         Senior Engineer, Technology ・ Nagarro
@@ -140,6 +144,7 @@ export default function Experience() {
                     </ul>
                     <p />
                 </a>
+                </TiltCard>
 
                 <div className="text-center">
                     <a

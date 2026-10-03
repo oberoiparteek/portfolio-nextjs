@@ -1,5 +1,6 @@
 import MotionSection from "@/components/MotionSection";
 import StickyHeader from "@/components/StickyHeader";
+import TiltCard from "@/components/TiltCard";
 
 export default function Projects() {
     return (
@@ -13,11 +14,8 @@ export default function Projects() {
                 }
             />
             <div className="experiences">
-                <a
-                    href="https://www.cvent.com/"
-                    target="_blank"
-                    className="exp"
-                >
+                <TiltCard>
+                <a href="https://www.cvent.com/" target="_blank" className="exp">
                     <span className="title link-svg" title="Project">
                         Enterprise Event Management Platform ・ Cvent
                         <svg
@@ -51,11 +49,9 @@ export default function Projects() {
                     </ul>
                     <p />
                 </a>
-                <a
-                    href="https://www.ciena.com/products/manage-control-plan"
-                    target="_blank"
-                    className="exp"
-                >
+                </TiltCard>
+                <TiltCard>
+                <a href="https://www.ciena.com/products/manage-control-plan" target="_blank" className="exp">
                     <span className="title link-svg" title="Job title">
                         MCP (Manage Control Plan) Controller application・ Ciena
                         <svg
@@ -88,6 +84,8 @@ export default function Projects() {
                     </ul>
                     <p />
                 </a>
+                </TiltCard>
+                <TiltCard>
                 <a href="https://www.nagarro.com/en" target="_blank" className="exp">
                     <span className="title link-svg" title="Job title">
                         US manufacturer of biomedical devices (Client Site) ・ Nagarro
@@ -129,6 +127,8 @@ export default function Projects() {
                     </ul>
                     <p />
                 </a>
+                </TiltCard>
+                <TiltCard>
                 <a href="https://www.nagarro.com/en" target="_blank" className="exp">
                     <span className="title link-svg" title="Job title">
                         Swedish Identity and security management ・ Nagarro
@@ -165,6 +165,8 @@ export default function Projects() {
                     </ul>
                     <p />
                 </a>
+                </TiltCard>
+                <TiltCard>
                 <a href="https://www.nagarro.com/en" target="_blank" className="exp">
                     <span className="title link-svg" title="Job title">
                         Financial Planning Association ・ Nagarro
@@ -200,6 +202,7 @@ export default function Projects() {
                     </ul>
                     <p />
                 </a>
+                </TiltCard>
                 <div className="text-center">
                     <a
                         className="my-1 underline-link link-svg"
