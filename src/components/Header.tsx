@@ -140,11 +140,11 @@ export default function Header() {
                         </li>
                         <li className="tooltip">
                             <a
-                                href="https://www.linkedin.com/in/parteek-kumar/"
+                                href="https://www.linkedin.com/in/kumarparteek/"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <p className="tooltiptext">linkedin.com/in/parteek-kumar</p>
+                                <p className="tooltiptext">linkedin.com/in/kumarparteek</p>
                                 <span className="visually-hidden">LinkedIn</span>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
