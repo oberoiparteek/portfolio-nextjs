@@ -18,16 +18,7 @@ export default function Header() {
     return (
         <header>
             <div>
-                <div className="heading-name">
-                    <span>Parteek Kumar</span>
-                </div>
-                <div className="header-statement">
-                    <span>Senior Frontend Engineer at Cvent</span>
-                </div>
-                <p className="header-description">
-                    I build scalable customer-facing web applications and developer tools
-                    that solve real user problems
-                </p>
+
                 <ul className="nav">
                     <li className={`about - nav ${ activeSection === "about" ? "active" : "" } `}>
                         <a href="#about" onClick={(e) => handleNavClick(e, "about")}>
