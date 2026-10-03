@@ -79,6 +79,10 @@ li {
 }
 
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     scroll-behavior: smooth;
     transition-property: all;
