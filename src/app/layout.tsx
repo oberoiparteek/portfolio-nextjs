@@ -41,6 +41,7 @@ export const metadata: Metadata = {
 };
 
 import Cursor from "@/components/Cursor";
+import KonamiCode from "@/components/KonamiCode";
 import { ThemeProvider } from "./providers";
 
 export default function RootLayout({
@@ -53,6 +54,7 @@ export default function RootLayout({
       <body className="font-sans">
         <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem>
           <Cursor />
+          <KonamiCode />
           {children}
         </ThemeProvider>
       </body>

@@ -22,7 +22,14 @@ export default function About() {
                 and integrating AI/LLM developer workflows.
             </p>
             <p>
-                Outside of the terminal, I enjoy the focus and strategy of <span className="fortnite-pointer">Fortnite</span> and <span className="sniper-pointer">Call of Duty</span>. Just like in development, precision and quick decision-making are key!
+                Outside of the terminal, I enjoy the focus and strategy of{" "}
+                <span className="tooltip">
+                    <span className="fortnite-pointer">Fortnite</span> and <span className="sniper-pointer">Call of Duty</span>
+                    <span className="tooltiptext" style={{ width: 'max-content', bottom: '120%', left: '50%', transform: 'translateX(-50%)' }}>
+                        🎮 Hint: Try the Konami Code! (↑ ↑ ↓ ↓ ← → ← → B A)
+                    </span>
+                </span>
+                . Just like in development, precision and quick decision-making are key!
                 Throughout my career, I've had the privilege of building robust solutions for industries ranging
                 from <b>event management</b> and <b>telecommunications</b> to <b>biotechnology</b>.
                 Recently, I also published peer-reviewed research on <b>Probing Audio-Generation Capabilities of Text-Based LLMs at NAACL SRW 2025</b>, exploring the frontier of AI and frontend interaction.
