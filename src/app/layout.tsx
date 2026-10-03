@@ -1,3 +1,5 @@
+import { SettingsProvider } from "@/providers/SettingsProvider";
+
 import type { Metadata } from "next";
 import "./globals.scss";
 
@@ -64,9 +66,11 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body className={`font-sans ${bricolage.variable} ${martianMono.variable}`}>
         <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem>
+          <SettingsProvider>
           <Cursor />
           <KonamiCode />
           {children}
+                  </SettingsProvider>
         </ThemeProvider>
       </body>
     </html>

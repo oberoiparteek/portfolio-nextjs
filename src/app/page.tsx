@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import SocialSidebar from "@/components/SocialSidebar";
 import './globals.scss'
 import Sections from "@/components/Sections";
 import MobileMenu from "@/components/MobileMenu";
@@ -12,6 +13,7 @@ export default function Home() {
             <main className="app">
                 <MobileTopBar />
                 <Header />
+                <SocialSidebar />
                 <Sections />
                 <MobileMenu />
                 <FabDownload />

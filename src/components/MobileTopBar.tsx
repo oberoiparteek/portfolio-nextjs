@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-mot
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import logo from "@/app/images/logo.png";
-import ThemeToggle from "./ThemeToggle";
+import SettingsDropdown from "./SettingsDropdown";
 
 export default function MobileTopBar() {
     const { toggle, isOpen } = useMobileNav();
@@ -102,7 +102,7 @@ export default function MobileTopBar() {
                 </motion.div>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                    <ThemeToggle />
+                    <SettingsDropdown />
                     <button
                         onClick={toggle}
                         className="mobile-menu-btn"

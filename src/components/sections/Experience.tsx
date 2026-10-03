@@ -18,7 +18,7 @@ export default function Experience() {
                 <TiltCard>
                 <a href="https://www.cvent.com/" target="_blank" className="exp">
                     <div className="flex items-start gap-4 mb-2">
-                        <img src="/images/cvent.svg" alt="Cvent Logo" className="w-12 h-12 rounded-lg shadow-sm bg-white p-1 object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                        <img src="/images/cvent.svg" alt="Cvent Logo" style={{ width: "48px", height: "48px", minWidth: "48px", minHeight: "48px", backgroundColor: "white", padding: "4px" }} className="rounded-lg shadow-sm bg-white p-1 object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
                         <div>
                             <span className="title link-svg text-lg" title="Job title" style={{ display: 'flex', alignItems: 'center' }}>
                                 Senior Frontend Engineer
@@ -64,7 +64,7 @@ export default function Experience() {
                 <TiltCard>
                 <a href="https://www.ciena.com/products/manage-control-plan" target="_blank" className="exp">
                     <div className="flex items-start gap-4 mb-2">
-                        <img src="/images/ciena.svg" alt="Ciena Logo" className="w-12 h-12 rounded-lg shadow-sm bg-white p-1 object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                        <img src="/images/ciena.svg" alt="Ciena Logo" style={{ width: "48px", height: "48px", minWidth: "48px", minHeight: "48px", backgroundColor: "white", padding: "4px" }} className="rounded-lg shadow-sm bg-white p-1 object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
                         <div>
                             <span className="title link-svg text-lg" title="Job title" style={{ display: 'flex', alignItems: 'center' }}>
                                 Software Development Engineer 2A
@@ -111,7 +111,7 @@ export default function Experience() {
                 <TiltCard>
                 <a href="https://www.nagarro.com/en" target="_blank" className="exp">
                     <div className="flex items-start gap-4 mb-2">
-                        <img src="/images/nagarro.svg" alt="Nagarro Logo" className="w-12 h-12 rounded-lg shadow-sm bg-white p-1 object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                        <img src="/images/nagarro.svg" alt="Nagarro Logo" style={{ width: "48px", height: "48px", minWidth: "48px", minHeight: "48px", backgroundColor: "white", padding: "4px" }} className="rounded-lg shadow-sm bg-white p-1 object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
                         <div>
                             <span className="title link-svg text-lg" title="Job title" style={{ display: 'flex', alignItems: 'center' }}>
                                 Senior Engineer, Technology

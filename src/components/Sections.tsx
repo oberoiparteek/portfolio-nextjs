@@ -8,7 +8,7 @@ import Volunteering from "./sections/Volunteering";
 
 export default function Sections() {
     return (
-        <>
+        <div className="sections-container">
             <About />
             <Skills />
             <Experience />
@@ -23,6 +23,6 @@ export default function Sections() {
                     and does not imply endorsement or current affiliation.
                 </p>
             </section>
-        </>
+        </div>
     )
 }

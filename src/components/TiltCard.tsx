@@ -3,7 +3,12 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
+import { useSettings } from "@/providers/SettingsProvider";
+
 export default function TiltCard({ children }: { children: React.ReactNode }) {
+    const { enableTilt } = useSettings();
+    if (!enableTilt) return <>{children}</>;
+
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [isHovering, setIsHovering] = useState(false);
 
@@ -28,7 +33,7 @@ export default function TiltCard({ children }: { children: React.ReactNode }) {
                 transformPerspective: 1000,
             }}
             transition={{ type: "spring", stiffness: 400, damping: 30 }}
-            style={{ transformStyle: "preserve-3d" }}
+            className="tilt-wrapper" style={{ transformStyle: "preserve-3d" }}
         >
             {children}
         </motion.div>
