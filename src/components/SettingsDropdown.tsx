@@ -13,12 +13,19 @@ export default function SettingsDropdown() {
 
     useEffect(() => {
         setMounted(true);
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (e.key === 'Escape') setIsOpen(false);
+        };
         if (isOpen) {
             document.body.style.overflow = 'hidden';
+            window.addEventListener('keydown', handleKeyDown);
         } else {
             document.body.style.overflow = '';
         }
-        return () => { document.body.style.overflow = ''; };
+        return () => { 
+            document.body.style.overflow = ''; 
+            window.removeEventListener('keydown', handleKeyDown);
+        };
     }, [isOpen]);
 
     if (!mounted) return <div className="w-8 h-8" />;
@@ -50,6 +57,9 @@ export default function SettingsDropdown() {
                     onClick={() => setIsOpen(false)}
                 >
                     <div 
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="visual-settings-title"
                         style={{ 
                             position: 'relative', width: '100%', maxWidth: '384px',
                             padding: '32px', borderRadius: '16px',
@@ -62,6 +72,7 @@ export default function SettingsDropdown() {
                         onClick={(e) => e.stopPropagation()}
                     >
                         <button 
+                            aria-label="Close settings"
                             style={{
                                 position: 'absolute', top: '16px', right: '16px', 
                                 background: 'transparent', border: 'none', 
@@ -73,7 +84,7 @@ export default function SettingsDropdown() {
                             ✕
                         </button>
 
-                        <h2 className="text-xl font-bold mb-6 text-center" style={{ color: 'var(--text-heading-color)' }}>Visual Settings</h2>
+                        <h2 id="visual-settings-title" className="text-xl font-bold mb-6 text-center" style={{ color: 'var(--text-heading-color)' }}>Visual Settings</h2>
                         
                         <div className="mb-6">
                             <label className="text-sm font-semibold mb-2 block opacity-70">Theme</label>

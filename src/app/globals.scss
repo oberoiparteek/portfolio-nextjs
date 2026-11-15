@@ -49,6 +49,8 @@
     --glass-bg-start: rgba(255, 255, 255, 0.05);
     --glass-bg-end: rgba(255, 255, 255, 0.01);
     --glass-border: rgba(255, 255, 255, 0.12);
+    --glass-nav-bg: rgba(15, 23, 42, 0.75);
+    --glass-nav-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
     --cursor-bg-center: rgb(16, 29, 64);
     --cursor-bg-edge: rgb(15, 23, 42);
 }
@@ -64,6 +66,8 @@
     --glass-bg-start: rgba(0, 0, 0, 0.03);
     --glass-bg-end: rgba(0, 0, 0, 0.01);
     --glass-border: rgba(15, 23, 42, 0.18);
+    --glass-nav-bg: rgba(255, 255, 255, 0.85);
+    --glass-nav-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     --cursor-bg-center: rgba(13, 148, 136, 0.08);
     --cursor-bg-edge: rgb(248, 250, 252);
 }
@@ -81,6 +85,30 @@ li {
 
 html {
     scroll-behavior: smooth;
+}
+
+section,
+[id] {
+    scroll-margin-top: 100px;
+}
+
+*:focus-visible {
+    outline: 2px solid var(--color-marine);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    .exp:hover {
+        transform: none !important;
+    }
 }
 
 body {
@@ -1062,12 +1090,17 @@ body {
     }
 }
 /* DYNAMIC LAYOUT ENGINE */
-/* DYNAMIC LAYOUT ENGINE */
-[data-layout="right"] .app {
-    flex-direction: row-reverse;
+[data-layout="right"] {
+    .app {
+        flex-direction: row-reverse;
+    }
+    .contact {
+        left: 2rem;
+        right: auto;
+    }
 }
 
-[data-layout="top"] .app, [data-layout="bottom"] .app {
+[data-layout="top"] .app {
     flex-direction: column;
     align-items: center;
 
@@ -1077,8 +1110,20 @@ body {
     }
 }
 
-[data-layout="bottom"] .app {
-    flex-direction: column-reverse;
+[data-layout="bottom"] {
+    .app {
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .sections-container {
+            width: 100%;
+            max-width: 800px;
+            padding-bottom: 120px;
+        }
+    }
+    .fab-download {
+        bottom: 100px;
+    }
 }
 
 

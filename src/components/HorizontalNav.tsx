@@ -26,18 +26,18 @@ export default function HorizontalNav({ position }: { position: "top" | "bottom"
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                background: 'rgba(255, 255, 255, 0.22)',
+                background: 'var(--glass-nav-bg, rgba(255, 255, 255, 0.22))',
                 backdropFilter: 'blur(24px) saturate(150%)',
                 WebkitBackdropFilter: 'blur(24px) saturate(150%)',
-                border: '1px solid rgba(255, 255, 255, 0.3)',
-                padding: '16px 32px',
-                borderRadius: '24px',
-                boxShadow: position === 'top' ? '0 10px 40px rgba(0,0,0,0.4)' : '0 -10px 40px rgba(0,0,0,0.4)',
+                border: '1px solid var(--glass-border)',
+                padding: '14px 28px',
+                borderRadius: '9999px',
+                boxShadow: 'var(--glass-nav-shadow, 0 10px 40px rgba(0,0,0,0.3))',
                 marginBottom: position === 'top' ? '40px' : '0',
                 marginTop: position === 'bottom' ? '40px' : '0',
             }}
         >
-            <ul className="nav" style={{ display: 'flex', flexDirection: 'row', gap: '2.5rem', margin: 0, padding: 0 }}>
+            <ul className="nav" style={{ display: 'flex', flexDirection: 'row', gap: '2rem', margin: 0, padding: 0, alignItems: 'center' }}>
                 {["about", "experience", "skills", "education", "projects", "publications", "volunteering", "beyond-code"].map((item) => (
                     <li key={item} style={{ listStyle: 'none', padding: 0 }}>
                         <a 
@@ -45,14 +45,18 @@ export default function HorizontalNav({ position }: { position: "top" | "bottom"
                             onClick={(e) => handleNavClick(e, item)}
                             style={{ 
                                 textDecoration: 'none',
-                                fontWeight: activeSection === item ? 'bold' : 'normal',
-                                opacity: activeSection === item ? 1 : 0.7,
-                                fontSize: '0.85rem',
+                                fontWeight: activeSection === item ? 700 : 500,
+                                opacity: activeSection === item ? 1 : 0.65,
+                                fontSize: '0.825rem',
+                                letterSpacing: '0.5px',
                                 textTransform: 'uppercase',
-                                color: 'var(--text-heading-color)' // Inherit adaptively
+                                color: activeSection === item ? 'var(--color-marine)' : 'var(--text-heading-color)',
+                                borderBottom: activeSection === item ? '2px solid var(--color-marine)' : '2px solid transparent',
+                                paddingBottom: '4px',
+                                transition: 'all 0.2s ease'
                             }}
                         >
-                            {item}
+                            {item.replace('-', ' ')}
                         </a>
                     </li>
                 ))}
