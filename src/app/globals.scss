@@ -36,6 +36,7 @@
     --text-s-color: 148, 163, 184;
     --long--span--bar: 5rem;
     --color-marine: rgb(92, 229, 212);
+    --color-on-marine: #0F172A;
     --color-bg-marine-light: rgba(92, 229, 213, 0.15);
     --font-size-statement: 1.2em;
     --font-size-small: 0.9rem;
@@ -51,6 +52,7 @@
     --glass-border: rgba(255, 255, 255, 0.12);
     --glass-nav-bg: rgba(15, 23, 42, 0.75);
     --glass-nav-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    --card-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
     --cursor-bg-center: rgb(16, 29, 64);
     --cursor-bg-edge: rgb(15, 23, 42);
 }
@@ -59,15 +61,17 @@
     --text-heading-color: #0F172A;
     --text-s-color: 71, 85, 105;
     --color-marine: rgb(13, 148, 136);
+    --color-on-marine: #FFFFFF;
     --color-bg-marine-light: rgba(13, 148, 136, 0.1);
     --color-background: rgb(248, 250, 252);
     --color-nav-uiblur-stuck: rgba(248, 250, 252, 0.7);
     --grid-color: rgba(0, 0, 0, 0.04);
-    --glass-bg-start: rgba(0, 0, 0, 0.03);
-    --glass-bg-end: rgba(0, 0, 0, 0.01);
-    --glass-border: rgba(15, 23, 42, 0.18);
+    --glass-bg-start: #FFFFFF;
+    --glass-bg-end: #F8FAFC;
+    --glass-border: rgba(15, 23, 42, 0.09);
     --glass-nav-bg: rgba(255, 255, 255, 0.85);
     --glass-nav-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --card-shadow: 0 1px 3px rgba(15, 23, 42, 0.04), 0 6px 16px -2px rgba(15, 23, 42, 0.04);
     --cursor-bg-center: rgba(13, 148, 136, 0.08);
     --cursor-bg-edge: rgb(248, 250, 252);
 }
@@ -576,7 +580,7 @@ body {
                 background: linear-gradient(135deg, var(--glass-bg-start) 0%, var(--glass-bg-end) 100%);
                 border: 1px solid var(--glass-border);
                 border-radius: 16px;
-                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+                box-shadow: var(--card-shadow);
                 backdrop-filter: blur(5px);
                 -webkit-backdrop-filter: blur(5px);
                 transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;

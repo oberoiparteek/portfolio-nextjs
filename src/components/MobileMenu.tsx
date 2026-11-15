@@ -90,7 +90,7 @@ export default function MobileMenu() {
                                 </li>
                             ))}
                             {/* Added Resume Download Link here since we removed FAB */}
-                            <li style={{ marginTop: '12px', borderTop: '1px solid rgba(92, 229, 213, 0.2)', paddingTop: '12px' }}>
+                            <li style={{ marginTop: '12px', borderTop: '1px solid var(--glass-border)', paddingTop: '12px' }}>
                                 <a
                                     href="/r"
                                     target="_blank"

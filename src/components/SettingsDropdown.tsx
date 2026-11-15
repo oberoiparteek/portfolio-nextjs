@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { useSettings } from "@/providers/SettingsProvider";
 import { useTheme } from "next-themes";
-import { Settings, Sun, Moon, Box, Layers, AlignLeft, AlignRight, AlignVerticalSpaceAround, AlignVerticalJustifyCenter } from "lucide-react";
+import { Settings, Sun, Moon, Monitor, Box, Layers, AlignLeft, AlignRight, AlignVerticalSpaceAround, AlignVerticalJustifyCenter } from "lucide-react";
 
 export default function SettingsDropdown() {
     const [isOpen, setIsOpen] = useState(false);
@@ -89,11 +89,14 @@ export default function SettingsDropdown() {
                         <div className="mb-6">
                             <label className="text-sm font-semibold mb-2 block opacity-70">Theme</label>
                             <div style={{ display: 'flex', backgroundColor: 'rgba(0,0,0,0.2)', borderRadius: '8px', padding: '4px', gap: '4px', border: '1px solid var(--glass-border)' }}>
-                                <button onClick={() => setTheme('dark')} style={{ flex: 1, padding: '8px 0', borderRadius: '6px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px', fontSize: '0.875rem', cursor: 'pointer', transition: 'background-color 0.2s', border: 'none', background: theme === 'dark' ? 'var(--color-marine)' : 'transparent', color: theme === 'dark' ? 'var(--color-background)' : 'inherit', fontWeight: theme === 'dark' ? 'bold' : 'normal', boxShadow: theme === 'dark' ? '0 4px 6px -1px rgba(0, 0, 0, 0.1)' : 'none' }}>
-                                    <Moon size={16} /> Dark
+                                <button onClick={() => setTheme('system')} style={{ flex: 1, padding: '8px 0', borderRadius: '6px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '6px', fontSize: '0.85rem', cursor: 'pointer', transition: 'background-color 0.2s', border: 'none', background: theme === 'system' ? 'var(--color-marine)' : 'transparent', color: theme === 'system' ? 'var(--color-on-marine)' : 'inherit', fontWeight: theme === 'system' ? 'bold' : 'normal', boxShadow: theme === 'system' ? '0 4px 6px -1px rgba(0, 0, 0, 0.1)' : 'none' }}>
+                                    <Monitor size={15} /> Auto
                                 </button>
-                                <button onClick={() => setTheme('light')} style={{ flex: 1, padding: '8px 0', borderRadius: '6px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px', fontSize: '0.875rem', cursor: 'pointer', transition: 'background-color 0.2s', border: 'none', background: theme === 'light' ? 'var(--color-marine)' : 'transparent', color: theme === 'light' ? 'var(--color-background)' : 'inherit', fontWeight: theme === 'light' ? 'bold' : 'normal', boxShadow: theme === 'light' ? '0 4px 6px -1px rgba(0, 0, 0, 0.1)' : 'none' }}>
-                                    <Sun size={16} /> Light
+                                <button onClick={() => setTheme('dark')} style={{ flex: 1, padding: '8px 0', borderRadius: '6px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '6px', fontSize: '0.85rem', cursor: 'pointer', transition: 'background-color 0.2s', border: 'none', background: theme === 'dark' ? 'var(--color-marine)' : 'transparent', color: theme === 'dark' ? 'var(--color-on-marine)' : 'inherit', fontWeight: theme === 'dark' ? 'bold' : 'normal', boxShadow: theme === 'dark' ? '0 4px 6px -1px rgba(0, 0, 0, 0.1)' : 'none' }}>
+                                    <Moon size={15} /> Dark
+                                </button>
+                                <button onClick={() => setTheme('light')} style={{ flex: 1, padding: '8px 0', borderRadius: '6px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '6px', fontSize: '0.85rem', cursor: 'pointer', transition: 'background-color 0.2s', border: 'none', background: theme === 'light' ? 'var(--color-marine)' : 'transparent', color: theme === 'light' ? 'var(--color-on-marine)' : 'inherit', fontWeight: theme === 'light' ? 'bold' : 'normal', boxShadow: theme === 'light' ? '0 4px 6px -1px rgba(0, 0, 0, 0.1)' : 'none' }}>
+                                    <Sun size={15} /> Light
                                 </button>
                             </div>
                         </div>
@@ -101,10 +104,10 @@ export default function SettingsDropdown() {
                         <div className="mb-6 desktop-only-setting">
                             <label className="text-sm font-semibold mb-2 block opacity-70">Physics (Cards)</label>
                             <div style={{ display: 'flex', backgroundColor: 'rgba(0,0,0,0.2)', borderRadius: '8px', padding: '4px', gap: '4px', border: '1px solid var(--glass-border)' }}>
-                                <button onClick={() => setEnableTilt(true)} style={{ flex: 1, padding: '8px 0', borderRadius: '6px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px', fontSize: '0.875rem', cursor: 'pointer', transition: 'background-color 0.2s', border: 'none', background: enableTilt ? 'var(--color-marine)' : 'transparent', color: enableTilt ? 'var(--color-background)' : 'inherit', fontWeight: enableTilt ? 'bold' : 'normal', boxShadow: enableTilt ? '0 4px 6px -1px rgba(0, 0, 0, 0.1)' : 'none' }}>
+                                <button onClick={() => setEnableTilt(true)} style={{ flex: 1, padding: '8px 0', borderRadius: '6px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px', fontSize: '0.875rem', cursor: 'pointer', transition: 'background-color 0.2s', border: 'none', background: enableTilt ? 'var(--color-marine)' : 'transparent', color: enableTilt ? 'var(--color-on-marine)' : 'inherit', fontWeight: enableTilt ? 'bold' : 'normal', boxShadow: enableTilt ? '0 4px 6px -1px rgba(0, 0, 0, 0.1)' : 'none' }}>
                                     <Box size={16} /> 3D Tilt
                                 </button>
-                                <button onClick={() => setEnableTilt(false)} style={{ flex: 1, padding: '8px 0', borderRadius: '6px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px', fontSize: '0.875rem', cursor: 'pointer', transition: 'background-color 0.2s', border: 'none', background: !enableTilt ? 'var(--color-marine)' : 'transparent', color: !enableTilt ? 'var(--color-background)' : 'inherit', fontWeight: !enableTilt ? 'bold' : 'normal', boxShadow: !enableTilt ? '0 4px 6px -1px rgba(0, 0, 0, 0.1)' : 'none' }}>
+                                <button onClick={() => setEnableTilt(false)} style={{ flex: 1, padding: '8px 0', borderRadius: '6px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px', fontSize: '0.875rem', cursor: 'pointer', transition: 'background-color 0.2s', border: 'none', background: !enableTilt ? 'var(--color-marine)' : 'transparent', color: !enableTilt ? 'var(--color-on-marine)' : 'inherit', fontWeight: !enableTilt ? 'bold' : 'normal', boxShadow: !enableTilt ? '0 4px 6px -1px rgba(0, 0, 0, 0.1)' : 'none' }}>
                                     <Layers size={16} /> Flat
                                 </button>
                             </div>
@@ -117,7 +120,7 @@ export default function SettingsDropdown() {
                                     <button 
                                         key={l}
                                         onClick={() => setLayout(l)} 
-                                        style={{ padding: '8px 0', borderRadius: '6px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px', fontSize: '0.875rem', textTransform: 'capitalize', cursor: 'pointer', transition: 'background-color 0.2s', border: 'none', background: layout === l ? 'var(--color-marine)' : 'transparent', color: layout === l ? 'var(--color-background)' : 'inherit', fontWeight: layout === l ? 'bold' : 'normal', boxShadow: layout === l ? '0 4px 6px -1px rgba(0, 0, 0, 0.1)' : 'none' }}
+                                        style={{ padding: '8px 0', borderRadius: '6px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px', fontSize: '0.875rem', textTransform: 'capitalize', cursor: 'pointer', transition: 'background-color 0.2s', border: 'none', background: layout === l ? 'var(--color-marine)' : 'transparent', color: layout === l ? 'var(--color-on-marine)' : 'inherit', fontWeight: layout === l ? 'bold' : 'normal', boxShadow: layout === l ? '0 4px 6px -1px rgba(0, 0, 0, 0.1)' : 'none' }}
                                     >
                                         {l === 'left' && <AlignLeft size={16} />}
                                         {l === 'right' && <AlignRight size={16} />}

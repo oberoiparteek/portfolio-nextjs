@@ -4,12 +4,14 @@ import { useMobileNav } from "@/context/MobileNavContext";
 import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 import logo from "@/app/images/logo.png";
 import SettingsDropdown from "./SettingsDropdown";
 
 export default function MobileTopBar() {
     const { toggle, isOpen } = useMobileNav();
     const { scrollY } = useScroll();
+    const { resolvedTheme } = useTheme();
     const [isMounted, setIsMounted] = useState(false);
     const [hidden, setHidden] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
@@ -47,14 +49,14 @@ export default function MobileTopBar() {
     const nameOpacity = useTransform(scrollY, [50, 150], [0, 1]);
     const nameY = useTransform(scrollY, [50, 150], [10, 0]);
 
-    // Transform outputs must be defined at top level to avoid Hook rules violation
+    const isDark = resolvedTheme !== "light";
     const backgroundColor = useTransform(
         bgOpacity,
-        (v) => `rgba(15, 23, 42, ${v})`
+        (v) => isDark ? `rgba(15, 23, 42, ${v})` : `rgba(248, 250, 252, ${v})`
     );
     const borderBottom = useTransform(
         borderOpacity,
-        (v) => `1px solid rgba(92, 229, 213, ${v})`
+        (v) => isDark ? `1px solid rgba(92, 229, 213, ${v})` : `1px solid rgba(15, 23, 42, ${v * 0.4})`
     );
     const backdropFilter = useTransform(blurValue, (v) => `blur(${v}px)`);
 

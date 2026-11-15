@@ -65,7 +65,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body className={`font-sans ${bricolage.variable} ${martianMono.variable}`}>
-        <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem>
+        <ThemeProvider attribute="data-theme" defaultTheme="system" enableSystem>
           <SettingsProvider>
           <Cursor />
           <KonamiCode />

@@ -13,7 +13,7 @@ export default function About() {
                         width={96}
                         height={96}
                         className="rounded-full shadow-md border-2"
-                        style={{ width: '120px', height: '120px', minWidth: '120px', minHeight: '120px', borderRadius: '50%', borderColor: 'rgba(92, 229, 213, 0.4)', objectFit: 'cover' }}
+                        style={{ width: '120px', height: '120px', minWidth: '120px', minHeight: '120px', borderRadius: '50%', borderColor: 'var(--color-marine)', objectFit: 'cover' }}
                         priority
                     />
                 </div>
@@ -53,8 +53,8 @@ export default function About() {
                             borderRadius: '9999px',
                             transition: 'all 0.3s',
                             background: 'var(--color-marine)',
-                            color: 'rgb(15, 23, 42)',
-                            boxShadow: '0 4px 14px rgba(92, 229, 213, 0.4)',
+                            color: 'var(--color-on-marine)',
+                            boxShadow: '0 4px 14px rgba(13, 148, 136, 0.3)',
                             textDecoration: 'none'
                         }}
                     >
@@ -73,9 +73,10 @@ export default function About() {
                             fontWeight: 600,
                             borderRadius: '9999px',
                             transition: 'all 0.3s',
-                            background: 'rgba(255, 255, 255, 0.05)',
+                            background: 'var(--glass-bg-start)',
                             color: 'var(--text-heading-color)',
-                            border: '1px solid rgba(255, 255, 255, 0.1)',
+                            border: '1px solid var(--glass-border)',
+                            boxShadow: 'var(--card-shadow)',
                             backdropFilter: 'blur(12px)',
                             WebkitBackdropFilter: 'blur(12px)',
                             textDecoration: 'none'
