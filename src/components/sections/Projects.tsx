@@ -1,3 +1,4 @@
+import Link from "next/link";
 import MotionSection from "@/components/MotionSection";
 import StickyHeader from "@/components/StickyHeader";
 import TiltCard from "@/components/TiltCard";
@@ -14,6 +15,59 @@ export default function Projects() {
                 }
             />
             <div className="experiences">
+                
+                {/* BFF + Konva Interactive Subapp Spotlight */}
+                <TiltCard>
+                    <Link href="/studio" className="exp" style={{ display: 'block', textDecoration: 'none', border: '1px solid rgba(92, 229, 212, 0.4)', borderRadius: '12px', background: 'linear-gradient(135deg, rgba(92, 229, 212, 0.1) 0%, rgba(56, 189, 248, 0.05) 100%)' }}>
+                        <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '0.5rem' }}>
+                            <div style={{ padding: "10px", borderRadius: "8px", background: "var(--color-bg-marine-light)", color: "var(--color-marine)", flexShrink: 0, width: "44px", height: "44px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                                </svg>
+                            </div>
+                            <div style={{ width: '100%' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.5rem', flexWrap: 'wrap' }}>
+                                    <span className="title link-svg text-lg" style={{ display: 'flex', alignItems: 'center', color: 'var(--color-marine)' }}>
+                                        Interactive Visual Studio (BFF & Konva)
+                                        <svg
+                                            role="presentation"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 ml-1"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                fillRule="evenodd"
+                                                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                                clipRule="evenodd"
+                                            />
+                                        </svg>
+                                    </span>
+                                    <span style={{ fontSize: '0.72rem', padding: '2px 8px', borderRadius: '9999px', background: 'var(--color-marine)', color: '#0F172A', fontWeight: 700 }}>
+                                        Live App Demo ↗
+                                    </span>
+                                </div>
+                                <p>
+                                    <small title="Type">INTERACTIVE SUBAPP ・ BACKEND-FOR-FRONTEND ARCHITECTURE</small>
+                                </p>
+                                <ul className="mt-2 text-sm leading-normal list-disc ml-6 space-y-2">
+                                    <li>Interactive mini-Canva thumbnail and credential badge designer powered by raw Konva.js (React 19) running at 60 FPS.</li>
+                                    <li>Decoupled via a custom Next.js App Router Backend-For-Frontend (BFF) API route (<code>/api/bff/artifacts</code>) aggregating multi-service metadata into unified canvas layouts.</li>
+                                    <li>Interactive Transformer enabling free dragging, resizing, rotation, live text manipulation, gradient customization, and 2x Retina PNG export.</li>
+                                </ul>
+                                <ul className="badge-wrapper">
+                                    <li className="badge">Konva.js</li>
+                                    <li className="badge">BFF Pattern</li>
+                                    <li className="badge">Next.js App Router</li>
+                                    <li className="badge">React 19</li>
+                                    <li className="badge">Canvas Transformer</li>
+                                    <li className="badge">Retina Export</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </Link>
+                </TiltCard>
                 
 
                 <TiltCard>

@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import SettingsDropdown from "./SettingsDropdown";
 
@@ -51,6 +52,29 @@ export default function SidebarNav() {
                         </a>
                     </li>
                 ))}
+                <li style={{ padding: '0.5rem 0 0 0' }}>
+                    <Link
+                        href="/studio"
+                        style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '0.45rem',
+                            padding: '0.4rem 0.8rem',
+                            borderRadius: '9999px',
+                            background: 'var(--color-bg-marine-light)',
+                            border: '1px solid rgba(92, 229, 212, 0.35)',
+                            color: 'var(--color-marine)',
+                            fontSize: '0.72rem',
+                            fontWeight: 700,
+                            letterSpacing: '0.5px',
+                            textDecoration: 'none',
+                            transition: 'all 0.2s ease',
+                        }}
+                    >
+                        <span>🎨 CANVAS STUDIO</span>
+                        <span style={{ fontSize: '0.62rem', background: 'var(--color-marine)', color: '#0F172A', padding: '1px 5px', borderRadius: '4px', fontWeight: 800 }}>BFF</span>
+                    </Link>
+                </li>
             </ul>
         </header>
     );

@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import SettingsDropdown from "./SettingsDropdown";
 
@@ -60,6 +61,27 @@ export default function HorizontalNav({ position }: { position: "top" | "bottom"
                         </a>
                     </li>
                 ))}
+                <li style={{ listStyle: 'none', padding: 0 }}>
+                    <Link
+                        href="/studio"
+                        style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '4px',
+                            padding: '3px 10px',
+                            borderRadius: '9999px',
+                            background: 'var(--color-bg-marine-light)',
+                            border: '1px solid rgba(92, 229, 212, 0.35)',
+                            color: 'var(--color-marine)',
+                            fontSize: '0.72rem',
+                            fontWeight: 700,
+                            textDecoration: 'none',
+                            transition: 'all 0.2s ease',
+                        }}
+                    >
+                        <span>🎨 STUDIO</span>
+                    </Link>
+                </li>
             </ul>
 
             <div style={{ position: 'absolute', right: '24px' }}>

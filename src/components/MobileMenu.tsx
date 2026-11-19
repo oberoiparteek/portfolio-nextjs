@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMobileNav } from "@/context/MobileNavContext";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -89,6 +90,20 @@ export default function MobileMenu() {
                                     </a>
                                 </li>
                             ))}
+                            {/* Studio Subapp Link */}
+                            <li style={{ marginTop: '8px', borderTop: '1px solid var(--glass-border)', paddingTop: '10px' }}>
+                                <Link
+                                    href="/studio"
+                                    className="mobile-nav-link"
+                                    onClick={close}
+                                    style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'var(--color-marine)', fontWeight: 600 }}
+                                >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                                    </svg>
+                                    Visual Artifact Studio (BFF)
+                                </Link>
+                            </li>
                             {/* Added Resume Download Link here since we removed FAB */}
                             <li style={{ marginTop: '12px', borderTop: '1px solid var(--glass-border)', paddingTop: '12px' }}>
                                 <a
