@@ -36,6 +36,7 @@ export default function SidebarNav() {
                             }}
                         >
                             <span 
+                                className="nav-indicator"
                                 style={{
                                     display: 'inline-block',
                                     transition: 'all 0.15s cubic-bezier(.4, 0, .2, 1)',
@@ -52,27 +53,41 @@ export default function SidebarNav() {
                         </a>
                     </li>
                 ))}
-                <li style={{ padding: '0.5rem 0 0 0' }}>
+                <li style={{ padding: '0.75rem 0 0 0', marginTop: '0.25rem' }}>
                     <Link
                         href="/studio"
                         style={{
                             display: 'inline-flex',
                             alignItems: 'center',
-                            gap: '0.45rem',
-                            padding: '0.4rem 0.8rem',
+                            gap: '0.5rem',
+                            padding: '0.45rem 0.85rem',
                             borderRadius: '9999px',
-                            background: 'var(--color-bg-marine-light)',
+                            background: 'var(--color-bg-marine-light, rgba(92, 229, 212, 0.1))',
                             border: '1px solid rgba(92, 229, 212, 0.35)',
-                            color: 'var(--color-marine)',
-                            fontSize: '0.72rem',
+                            color: 'var(--color-marine, #5CE5D4)',
+                            fontSize: '0.75rem',
                             fontWeight: 700,
                             letterSpacing: '0.5px',
                             textDecoration: 'none',
+                            whiteSpace: 'nowrap',
                             transition: 'all 0.2s ease',
                         }}
                     >
-                        <span>🎨 CANVAS STUDIO</span>
-                        <span style={{ fontSize: '0.62rem', background: 'var(--color-marine)', color: '#0F172A', padding: '1px 5px', borderRadius: '4px', fontWeight: 800 }}>BFF</span>
+                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', whiteSpace: 'nowrap' }}>
+                            <span>🎨</span>
+                            <span>CANVAS STUDIO</span>
+                        </span>
+                        <span style={{ 
+                            fontSize: '0.62rem', 
+                            background: 'var(--color-marine, #5CE5D4)', 
+                            color: '#0F172A', 
+                            padding: '1px 5px', 
+                            borderRadius: '4px', 
+                            fontWeight: 800,
+                            lineHeight: 1.2
+                        }}>
+                            BFF
+                        </span>
                     </Link>
                 </li>
             </ul>

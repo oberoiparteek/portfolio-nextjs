@@ -464,7 +464,7 @@ body {
                 display: flex;
                 align-items: center;
 
-                span {
+                span.nav-indicator {
                     display: inline-block;
                     transition-property: all;
                     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
@@ -1071,11 +1071,11 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
 
-    // Show on all devices
+    // Desktop only - on mobile, users have "View Resume" in Hero and in Mobile Nav
     display: flex;
 
     @media only screen and (max-width: 992px) {
-        // Any mobile specific adjustments if needed, otherwise this block is optional
+        display: none !important;
     }
 
     &:hover {
@@ -1178,21 +1178,14 @@ body {
     }
 
     @media only screen and (max-width: 992px) {
-        position: static;
-        width: 100%;
-        margin-top: 2rem;
-        transform: none;
-        
-        .wrapper ul {
-            flex-direction: row;
-            justify-content: center;
-            row-gap: 0;
-            column-gap: 1.5rem;
-            
-            &::after {
-                display: none;
-            }
-        }
+        display: none !important;
+    }
+}
+
+.mobile-hero-socials {
+    display: none;
+    @media only screen and (max-width: 992px) {
+        display: flex !important;
     }
 }
 

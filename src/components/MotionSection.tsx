@@ -16,10 +16,10 @@ export default function MotionSection({
         <motion.section
             id={id}
             className={className}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.05, margin: "0px 0px -40px 0px" }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
         >
             {children}
         </motion.section>
