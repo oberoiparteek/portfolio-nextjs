@@ -159,6 +159,13 @@ async function runTest() {
     console.log(`   Architecture Drawer Open: ${isDrawerOpen}`);
     if (!isDrawerOpen) throw new Error("Architecture drawer failed to open!");
 
+    // Check modal bounding box to ensure it's not trapped in header
+    const modalBox = await page.locator("[data-testid='arch-modal']").boundingBox();
+    console.log("   Architecture Drawer Bounding Box:", modalBox);
+    if (!modalBox || modalBox.height < 400) {
+      throw new Error(`Architecture drawer height is suspiciously small (${modalBox?.height}px)! May be trapped in header!`);
+    }
+
     await page.screenshot({ path: path.join(ARTIFACTS_DIR, "agent_studio_architecture_drawer.png") });
 
     // Close drawer
