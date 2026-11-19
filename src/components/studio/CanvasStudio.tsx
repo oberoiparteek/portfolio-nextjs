@@ -10,6 +10,7 @@ import {
   SaveThumbnailRequest,
   SaveThumbnailResponse,
 } from "@/types/bff";
+import { ARTIFACTS_CATALOG } from "@/data/artifactsCatalog";
 import BffArchitectureDrawer from "./BffArchitectureDrawer";
 import {
   ArrowLeft,
@@ -84,11 +85,11 @@ export default function CanvasStudio() {
 
   // BFF State
   const [bffData, setBffData] = useState<BFFCatalogResponse | null>(null);
-  const [artifacts, setArtifacts] = useState<Artifact[]>([]);
-  const [selectedArtifact, setSelectedArtifact] = useState<Artifact | null>(null);
+  const [artifacts, setArtifacts] = useState<Artifact[]>(ARTIFACTS_CATALOG);
+  const [selectedArtifact, setSelectedArtifact] = useState<Artifact | null>(ARTIFACTS_CATALOG[0] || null);
   const [searchTerm, setSearchTerm] = useState("");
   const [activeCategory, setActiveCategory] = useState("all");
-  const [isLoadingBff, setIsLoadingBff] = useState(true);
+  const [isLoadingBff, setIsLoadingBff] = useState(false);
 
   // Studio UI State
   const [selectedNode, setSelectedNode] = useState<Konva.Node | null>(null);
