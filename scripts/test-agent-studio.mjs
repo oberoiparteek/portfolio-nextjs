@@ -154,7 +154,7 @@ async function runTest() {
     await archBtn.click();
     await page.waitForTimeout(600);
 
-    const drawerHeading = page.locator("text=Parteek Kumar: Full-Stack AI Systems Trifecta");
+    const drawerHeading = page.locator("text=Parteek Kumar: Full-Stack AI Systems").first();
     const isDrawerOpen = await drawerHeading.isVisible();
     console.log(`   Architecture Drawer Open: ${isDrawerOpen}`);
     if (!isDrawerOpen) throw new Error("Architecture drawer failed to open!");

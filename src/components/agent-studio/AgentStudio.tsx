@@ -117,6 +117,7 @@ export default function AgentStudio() {
     >
       {/* Top Navbar */}
       <header
+        className="agent-studio-header"
         style={{
           display: "flex",
           alignItems: "center",
