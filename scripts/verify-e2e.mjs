@@ -36,6 +36,13 @@ async function verify() {
   const hasDownload = await downloadBtn.isVisible().catch(() => false);
   console.log(`   Export PNG button ready: ${hasDownload}`);
 
+  // 2b. Verify Local Dev Server /agent-studio
+  console.log('2b. Checking http://localhost:3000/agent-studio ...');
+  const localAgentRes = await page.goto('http://localhost:3000/agent-studio', { waitUntil: 'domcontentloaded', timeout: 15000 });
+  console.log(`   Local Agent Studio HTTP Status: ${localAgentRes.status()}`);
+  const agentHeading = await page.textContent('h1');
+  console.log(`   Agent Studio Heading: "${agentHeading}"`);
+
   // 3. Verify Live GitHub Pages
   console.log('3. Checking live production https://oberoiparteek.github.io/ ...');
   const liveRes = await page.goto('https://oberoiparteek.github.io/', { waitUntil: 'domcontentloaded', timeout: 20000 });

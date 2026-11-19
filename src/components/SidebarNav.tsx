@@ -63,6 +63,17 @@ export default function SidebarNav() {
                         <span className="studio-badge">BFF</span>
                     </Link>
                 </li>
+                <li style={{ padding: '0.4rem 0 0 0', listStyle: 'none' }}>
+                    <Link
+                        href="/agent-studio"
+                        className="studio-nav-btn agent-nav-btn"
+                        style={{ borderColor: 'rgba(56, 189, 248, 0.4)' }}
+                    >
+                        <span className="studio-icon">⚡</span>
+                        <span>AGENT STUDIO</span>
+                        <span className="studio-badge" style={{ background: '#38BDF8', color: '#0F172A' }}>AI</span>
+                    </Link>
+                </li>
             </ul>
         </header>
     );

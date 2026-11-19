@@ -104,6 +104,18 @@ export default function MobileMenu() {
                                     Visual Artifact Studio (BFF)
                                 </Link>
                             </li>
+                            {/* Agent Studio Link */}
+                            <li style={{ marginTop: '4px', paddingTop: '4px' }}>
+                                <Link
+                                    href="/agent-studio"
+                                    className="mobile-nav-link"
+                                    onClick={close}
+                                    style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#38BDF8', fontWeight: 600 }}
+                                >
+                                    <span style={{ fontSize: '18px' }}>⚡</span>
+                                    Mosaic AI Agent Studio (LangGraph)
+                                </Link>
+                            </li>
                             {/* Added Resume Download Link here since we removed FAB */}
                             <li style={{ marginTop: '12px', borderTop: '1px solid var(--glass-border)', paddingTop: '12px' }}>
                                 <a

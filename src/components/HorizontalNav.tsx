@@ -73,6 +73,17 @@ export default function HorizontalNav({ position }: { position: "top" | "bottom"
                         <span className="studio-badge">BFF</span>
                     </Link>
                 </li>
+                <li style={{ listStyle: 'none', padding: 0 }}>
+                    <Link
+                        href="/agent-studio"
+                        className="studio-nav-btn agent-nav-btn"
+                        style={{ borderColor: 'rgba(56, 189, 248, 0.4)' }}
+                    >
+                        <span className="studio-icon">⚡</span>
+                        <span>AGENTS</span>
+                        <span className="studio-badge" style={{ background: '#38BDF8', color: '#0F172A' }}>AI</span>
+                    </Link>
+                </li>
             </ul>
 
             <div style={{ display: 'flex', alignItems: 'center', borderLeft: '1px solid var(--glass-border)', paddingLeft: '12px' }}>

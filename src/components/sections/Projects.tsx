@@ -16,6 +16,60 @@ export default function Projects() {
             />
             <div className="experiences">
                 
+                {/* Compound AI Systems & Mosaic AI Interactive Studio Spotlight */}
+                <TiltCard>
+                    <Link href="/agent-studio" className="exp" style={{ display: 'block', textDecoration: 'none', border: '1px solid rgba(56, 189, 248, 0.45)', borderRadius: '12px', background: 'linear-gradient(135deg, rgba(56, 189, 248, 0.1) 0%, rgba(168, 85, 247, 0.06) 100%)', marginBottom: '1.25rem' }}>
+                        <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '0.5rem' }}>
+                            <div style={{ padding: "10px", borderRadius: "8px", background: "rgba(56, 189, 248, 0.15)", color: "#38BDF8", flexShrink: 0, width: "44px", height: "44px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                                </svg>
+                            </div>
+                            <div style={{ width: '100%' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.5rem', flexWrap: 'wrap' }}>
+                                    <span className="title link-svg text-lg" style={{ display: 'flex', alignItems: 'center', color: '#38BDF8' }}>
+                                        Compound AI Systems: Mosaic AI & LangGraph Studio
+                                        <svg
+                                            role="presentation"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 ml-1"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                fillRule="evenodd"
+                                                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                                clipRule="evenodd"
+                                            />
+                                        </svg>
+                                    </span>
+                                    <span style={{ fontSize: '0.72rem', padding: '2px 8px', borderRadius: '9999px', background: '#38BDF8', color: '#0F172A', fontWeight: 800 }}>
+                                        Live App Demo ↗
+                                    </span>
+                                </div>
+                                <p>
+                                    <small title="Type">ENTERPRISE AGENT ORCHESTRATION ・ LAKEHOUSE GOVERNANCE ・ MLFLOW OBSERVABILITY</small>
+                                </p>
+                                <ul className="mt-2 text-sm leading-normal list-disc ml-6 space-y-2">
+                                    <li>Interactive multi-hop cyclical ReAct state machine simulating autonomous revenue anomaly auditing and statistical outlier detection.</li>
+                                    <li>Cryptographic Human-In-The-Loop (HITL) gate via LangGraph <code>interrupt()</code> yielding execution for executive sign-off before committing Delta Lake partition backfills.</li>
+                                    <li>Full-stack observability with OpenTelemetry & MLflow Tracing flamegraphs, token economics breakdown, and Unity Catalog zero-trust RBAC defense against SQL injection attacks.</li>
+                                </ul>
+                                <ul className="badge-wrapper">
+                                    <li className="badge">Databricks Mosaic AI</li>
+                                    <li className="badge">LangGraph</li>
+                                    <li className="badge">ReAct State Machine</li>
+                                    <li className="badge">MLflow Tracing</li>
+                                    <li className="badge">Unity Catalog</li>
+                                    <li className="badge">Delta Lake ACID</li>
+                                    <li className="badge">Human-in-the-Loop</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </Link>
+                </TiltCard>
+
                 {/* BFF + Konva Interactive Subapp Spotlight */}
                 <TiltCard>
                     <Link href="/studio" className="exp" style={{ display: 'block', textDecoration: 'none', border: '1px solid rgba(92, 229, 212, 0.4)', borderRadius: '12px', background: 'linear-gradient(135deg, rgba(92, 229, 212, 0.1) 0%, rgba(56, 189, 248, 0.05) 100%)' }}>
