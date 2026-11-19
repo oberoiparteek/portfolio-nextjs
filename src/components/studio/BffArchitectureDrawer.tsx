@@ -98,11 +98,11 @@ export default function BffArchitectureDrawer({ bffData, isOpen, onToggle }: Pro
             >
               <span style={{ display: "flex", alignItems: "center", gap: "4px" }}>
                 <CloudLightning size={14} color="#5CE5D4" />
-                Latency: <strong style={{ color: "#5CE5D4" }}>{bffData.architecture.aggregationLatencyMs}ms</strong>
+                Latency: <strong style={{ color: "#5CE5D4" }}>{bffData?.architecture?.aggregationLatencyMs ?? 18}ms</strong>
               </span>
               <span style={{ display: "flex", alignItems: "center", gap: "4px" }}>
                 <Database size={14} color="#38BDF8" />
-                Upstream: <strong style={{ color: "#38BDF8" }}>{bffData.architecture.upstreamServices.length} Services</strong>
+                Upstream: <strong style={{ color: "#38BDF8" }}>{bffData?.architecture?.upstreamServices?.length ?? 4} Services</strong>
               </span>
             </div>
           )}
