@@ -49,12 +49,12 @@ export default function Projects() {
                                     </span>
                                 </div>
                                 <p>
-                                    <small title="Type">ENTERPRISE AGENT ORCHESTRATION ・ LAKEHOUSE GOVERNANCE ・ MLFLOW OBSERVABILITY</small>
+                                    <small title="Type">OPERATOR SPECIFICATION ・ REASONING RUNTIME ・ LAKEHOUSE GOVERNANCE</small>
                                 </p>
                                 <ul className="mt-2 text-sm leading-normal list-disc ml-6 space-y-2">
-                                    <li>Interactive multi-hop cyclical ReAct state machine simulating autonomous revenue anomaly auditing and statistical outlier detection.</li>
-                                    <li>Cryptographic Human-In-The-Loop (HITL) gate via LangGraph <code>interrupt()</code> yielding execution for executive sign-off before committing Delta Lake partition backfills.</li>
-                                    <li>Full-stack observability with OpenTelemetry & MLflow Tracing flamegraphs, token economics breakdown, and Unity Catalog zero-trust RBAC defense against SQL injection attacks.</li>
+                                    <li><strong>The Cyclical Control Loop:</strong> An operational ReAct state machine coupling stochastic Llama 3.3 reasoning nodes with deterministic lakehouse tables across bounded execution hops.</li>
+                                    <li><strong>Cryptographic Operator Intervention:</strong> Suspends execution at sensitive mutation boundaries via LangGraph <code>interrupt()</code>, requiring an RS256 JWT signature and SHA-256 checksum verification before staging Delta Lake ACID partition backfills.</li>
+                                    <li><strong>Machine Telemetry & Zero-Trust Bounds:</strong> OpenTelemetry & MLflow Tracing flamegraph profiling wall-clock latency and token costs ($USD), paired with Unity Catalog RBAC sandboxing to neutralize unauthorized SQL injection attacks.</li>
                                 </ul>
                                 <ul className="badge-wrapper">
                                     <li className="badge">Databricks Mosaic AI</li>
