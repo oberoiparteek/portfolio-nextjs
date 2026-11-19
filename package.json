@@ -7,6 +7,8 @@
     "build": "next build",
     "build:export": "NEXT_EXPORT=true next build && touch out/.nojekyll",
     "deploy:gh-pages": "npm run build:export && node scripts/deploy-gh-pages.js",
+    "test:bff-export": "node scripts/test-bff-export.mjs",
+    "test:e2e": "node scripts/verify-e2e.mjs",
     "start": "next start",
     "lint": "eslint"
   },
