@@ -485,6 +485,12 @@ export default function CanvasStudio() {
   useEffect(() => {
     let isMounted = true;
     async function fetchBffCatalog() {
+      // In static export environments (e.g. GitHub Pages), skip network fetch and use pre-hydrated catalog
+      if (typeof window !== "undefined" && window.location.hostname.endsWith("github.io")) {
+        setIsLoadingBff(false);
+        return;
+      }
+
       try {
         const res = await fetch("/api/bff/artifacts");
         if (res.ok) {
@@ -495,7 +501,7 @@ export default function CanvasStudio() {
           }
         }
       } catch {
-        // In static export environments (e.g. GitHub Pages), fallback to pre-compiled catalog seamlessly
+        // Fallback gracefully to pre-compiled catalog
       } finally {
         if (isMounted) setIsLoadingBff(false);
       }
