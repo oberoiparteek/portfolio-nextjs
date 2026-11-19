@@ -36,6 +36,15 @@ try {
   // Ensure .nojekyll exists in cloned repo root
   fs.writeFileSync(path.join(tempDir, '.nojekyll'), '');
 
+  // For GitHub Pages root compatibility, create flat .html files alongside directory/index.html
+  ['agent-studio', 'studio', 'resume', 'r'].forEach(route => {
+    const dirHtml = path.join(tempDir, route, 'index.html');
+    const flatHtml = path.join(tempDir, `${route}.html`);
+    if (fs.existsSync(dirHtml) && !fs.existsSync(flatHtml)) {
+      fs.copyFileSync(dirHtml, flatHtml);
+    }
+  });
+
   console.log("📝 Checking for git changes...");
   const status = execSync(`git -C "${tempDir}" status --porcelain`, { encoding: 'utf8' }).trim();
 

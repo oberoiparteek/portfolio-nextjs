@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
   ...(isExport
     ? {
         output: "export",
+        trailingSlash: true,
         images: { unoptimized: true },
       }
     : {}),
