@@ -66,25 +66,11 @@ export default function HorizontalNav({ position }: { position: "top" | "bottom"
                 <li style={{ listStyle: 'none', padding: 0 }}>
                     <Link
                         href="/studio"
-                        style={{
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            gap: '6px',
-                            padding: '4px 12px',
-                            borderRadius: '9999px',
-                            background: 'var(--color-bg-marine-light, rgba(92, 229, 212, 0.12))',
-                            border: '1px solid rgba(92, 229, 212, 0.35)',
-                            color: 'var(--color-marine, #5CE5D4)',
-                            fontSize: '0.8rem',
-                            fontWeight: 700,
-                            letterSpacing: '0.5px',
-                            whiteSpace: 'nowrap',
-                            textDecoration: 'none',
-                            transition: 'all 0.2s ease',
-                        }}
+                        className="studio-nav-btn"
                     >
-                        <span>🎨 STUDIO</span>
-                        <span style={{ fontSize: '0.62rem', background: 'var(--color-marine, #5CE5D4)', color: '#0F172A', padding: '1px 5px', borderRadius: '4px', fontWeight: 800 }}>BFF</span>
+                        <span className="studio-icon">🎨</span>
+                        <span>STUDIO</span>
+                        <span className="studio-badge">BFF</span>
                     </Link>
                 </li>
             </ul>
